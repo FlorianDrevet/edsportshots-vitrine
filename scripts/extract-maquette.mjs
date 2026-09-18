@@ -104,6 +104,7 @@ for (const [pageIndex, filename] of pages) {
   let template = JSON.parse(scriptContent(pageText, "__bundler/template"));
 
   template = template.replace(/<script\b[^>]*\bsrc="[^"]+"[^>]*><\/script>/gi, "");
+  template = template.replace(/<script\b[^>]*type="text\/x-dc"[^>]*>[\s\S]*?<\/script>/gi, "");
   template = template.replaceAll("<x-dc>", "").replaceAll("</x-dc>", "");
   template = template.replaceAll("<helmet>", "").replaceAll("</helmet>", "");
   template = template.replaceAll("{{accent}}", accent);
