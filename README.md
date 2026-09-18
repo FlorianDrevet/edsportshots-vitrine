@@ -17,6 +17,11 @@ py -m http.server 8080
 
 Puis ouvrir <http://localhost:8080>.
 
+## Démonstration en ligne
+
+- [Direction Tribune](https://black-moss-0e0f38a03.4.azurestaticapps.net)
+- [Direction Chrono](https://witty-sand-05b31c403.1.azurestaticapps.net)
+
 ## Déploiement Azure
 
 Prérequis :
@@ -52,4 +57,3 @@ Le script utilise par défaut :
 - `swa-edsportshots-chrono` → branche `design-chrono`.
 
 Les URL finales sont affichées par le script et restent consultables avec `az staticwebapp show`.
-
