@@ -132,6 +132,7 @@ function bodyContent(template) {
 const responsiveStyle = `
 <style>
 .maquette-mobile-only { display: none; }
+.maquette-canvas { margin-inline: auto; }
 @media (max-width: 700px) {
   html, body { width: 100%; min-width: 0; overflow-x: hidden; }
   body { display: block !important; min-height: 100vh; }
