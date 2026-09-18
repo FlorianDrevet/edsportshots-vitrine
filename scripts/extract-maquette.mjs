@@ -97,12 +97,8 @@ function materializeAsset(id, entry) {
   return relativePath;
 }
 
-for (const [pageIndex, filename] of pages) {
-  const pageId = pageOrder[pageIndex];
-  const pageText = unpack(outerManifest[pageId]).toString("utf8");
-  const nestedManifest = JSON.parse(scriptContent(pageText, "__bundler/manifest"));
+function prepareTemplate(pageText, nestedManifest) {
   let template = JSON.parse(scriptContent(pageText, "__bundler/template"));
-
   template = template.replace(/<script\b[^>]*\bsrc="[^"]+"[^>]*><\/script>/gi, "");
   template = template.replace(/<script\b[^>]*type="text\/x-dc"[^>]*>[\s\S]*?<\/script>/gi, "");
   template = template.replaceAll("<x-dc>", "").replaceAll("</x-dc>", "");
@@ -118,6 +114,53 @@ for (const [pageIndex, filename] of pages) {
     const entry = nestedManifest[id];
     if (!entry || entry.mime === "text/javascript") continue;
     template = template.replaceAll(id, materializeAsset(id, entry));
+  }
+
+  template = template.replace(
+    /<div style="width: (1440|390)px;/,
+    '<div class="maquette-canvas" style="width: $1px;',
+  );
+  return template;
+}
+
+function bodyContent(template) {
+  const bodyStart = template.indexOf("<body>");
+  const bodyEnd = template.lastIndexOf("</body>");
+  return template.slice(bodyStart + "<body>".length, bodyEnd);
+}
+
+const responsiveStyle = `
+<style>
+.maquette-mobile-only { display: none; }
+@media (max-width: 700px) {
+  html, body { width: 100%; min-width: 0; overflow-x: hidden; }
+  body { display: block !important; min-height: 100vh; }
+  .maquette-canvas { width: 100% !important; max-width: 100vw !important; height: auto !important; min-height: 100vh; margin: 0; overflow: visible !important; }
+  .maquette-canvas img { max-width: 100%; }
+}
+</style>`;
+
+for (const [pageIndex, filename] of pages) {
+  const pageId = pageOrder[pageIndex];
+  const pageText = unpack(outerManifest[pageId]).toString("utf8");
+  const nestedManifest = JSON.parse(scriptContent(pageText, "__bundler/manifest"));
+  let template = prepareTemplate(pageText, nestedManifest);
+
+  if (filename === "index.html") {
+    const mobilePageIndex = direction === "a" ? 4 : 9;
+    const mobilePageId = pageOrder[mobilePageIndex];
+    const mobilePageText = unpack(outerManifest[mobilePageId]).toString("utf8");
+    const mobileManifest = JSON.parse(scriptContent(mobilePageText, "__bundler/manifest"));
+    const mobileTemplate = prepareTemplate(mobilePageText, mobileManifest);
+    const headEnd = template.indexOf("</head>");
+    template = template.replace("</head>", `${responsiveStyle}\n</head>`);
+    template = template.replace(
+      /<body>([\s\S]*)<\/body>/,
+      `<body><div class="maquette-desktop">$1</div><div class="maquette-mobile-only">${bodyContent(mobileTemplate)}</div></body>`,
+    );
+    if (headEnd < 0) throw new Error(`Balise </head> introuvable dans ${filename}`);
+  } else {
+    template = template.replace("</head>", `${responsiveStyle}\n</head>`);
   }
 
   fs.writeFileSync(path.join(output, filename), `${template.trim()}\n`, "utf8");
