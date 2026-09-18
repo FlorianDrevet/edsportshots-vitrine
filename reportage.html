@@ -3,6 +3,16 @@
 <meta charset="utf-8">
 <title>EDSPORTSHOTS — Reportage de match (direction A)</title>
 
+
+<style>
+.maquette-mobile-only { display: none; }
+@media (max-width: 700px) {
+  html, body { width: 100%; min-width: 0; overflow-x: hidden; }
+  body { display: block !important; min-height: 100vh; }
+  .maquette-canvas { width: 100% !important; max-width: 100vw !important; height: auto !important; min-height: 100vh; margin: 0; overflow: visible !important; }
+  .maquette-canvas img { max-width: 100%; }
+}
+</style>
 </head>
 <body>
 
@@ -149,7 +159,7 @@ a{color:#F2F0EB;text-decoration:none}
 a:hover{color:#E4572E}
 </style>
 
-<div style="width: 1440px; height: 2800px; box-sizing: border-box; background: #0B0B0C; color: #F2F0EB; display: flex; flex-direction: column; overflow: hidden;">
+<div class="maquette-canvas" style="width: 1440px; height: 2800px; box-sizing: border-box; background: #0B0B0C; color: #F2F0EB; display: flex; flex-direction: column; overflow: hidden;">
 
 <header style="height: 88px; flex-shrink: 0; box-sizing: border-box; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #232326;">
 <a href="index.html" style="font-family: Anton, Impact, sans-serif; font-size: 21px; letter-spacing: 0.16em; color: #F2F0EB;">EDSPORTSHOTS</a>
