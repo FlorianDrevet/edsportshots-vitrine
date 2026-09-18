@@ -7,6 +7,8 @@ Deux directions visuelles basées sur la maquette fournie :
 
 Chaque branche contient une page statique complète et son workflow GitHub Actions. Les deux sites sont volontairement sans framework : ils peuvent être servis directement par Azure Static Web Apps avec le plan **Free**.
 
+Chaque direction reprend les quatre écrans de la maquette (`index.html`, `galerie.html`, `reportage.html`, `prestations.html`) ainsi que les visuels et polices embarqués dans le fichier fourni.
+
 ## Démonstration locale
 
 Depuis la branche choisie :
@@ -44,6 +46,17 @@ Le script crée deux ressources Azure Static Web Apps en **Free**, configure les
 Pour une seule direction, ajouter `-Only tribune` ou `-Only chrono`. Le script ne supprime aucune ressource existante : il crée ou réutilise les noms attendus et s'arrête si une action destructrice serait nécessaire.
 
 Une version Bash équivalente se trouve dans `scripts/deploy-azure.sh`.
+
+Pour réextraire une direction depuis le fichier de maquette :
+
+```powershell
+node scripts/extract-maquette.mjs `
+  --source "C:\Users\flori\Downloads\Site vitrine EDSPORTSHOTS.html" `
+  --direction a `
+  --output .
+```
+
+Utiliser `--direction c` pour la direction Chrono.
 
 ## Personnalisation avant mise en ligne
 
