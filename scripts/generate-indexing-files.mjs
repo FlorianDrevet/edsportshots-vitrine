@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const reportagesPath = path.join(projectRoot, 'src', 'app', 'content', 'reportages.json');
 const publicPath = path.join(projectRoot, 'public');
-const siteUrl = (process.env.EDS_SITE_URL || 'https://edsportshots.fr').replace(/\/+$/, '');
+const siteUrl = (process.env.EDS_SITE_URL || 'https://www.edsportshots.com').replace(/\/+$/, '');
 
 const escapeXml = (value) => value
   .replaceAll('&', '&amp;')

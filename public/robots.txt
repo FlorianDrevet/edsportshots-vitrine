@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://edsportshots.fr/sitemap.xml
+Sitemap: https://www.edsportshots.com/sitemap.xml

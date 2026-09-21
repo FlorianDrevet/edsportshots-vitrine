@@ -50,9 +50,9 @@ Les intégrations Google Analytics 4 et Microsoft Clarity sont prêtes dans `src
 
 Google Analytics suit les pages vues initiales et les changements de route Angular. Clarity est chargé en parallèle. Les titres de pages et les URLs canoniques sont aussi mis à jour lors des navigations Angular. Les identifiants sont publics par nature, mais les outils de mesure doivent être déclarés dans la politique de confidentialité et soumis au consentement nécessaire avant mise en production en France.
 
-Les fichiers `public/robots.txt` et `public/sitemap.xml` sont régénérés avant chaque build à partir des routes et des reportages présents. Le domaine utilisé par défaut est `https://edsportshots.fr`. Pour une autre URL, utilise `EDS_SITE_URL` pendant le build, par exemple `EDS_SITE_URL=https://www.exemple.fr npm run build`.
+Les fichiers `public/robots.txt` et `public/sitemap.xml` sont régénérés avant chaque build à partir des routes et des reportages présents. Le domaine utilisé par défaut est `https://www.edsportshots.com`. Pour une autre URL, utilise `EDS_SITE_URL` pendant le build, par exemple `EDS_SITE_URL=https://www.exemple.fr npm run build`.
 
-Après publication, ajoute le domaine dans Google Search Console puis soumets `https://edsportshots.fr/sitemap.xml`. La vérification Search Console reste une étape liée à ton compte Google et n'est donc pas incluse dans le dépôt.
+Après publication, ajoute le domaine dans Google Search Console puis soumets `https://www.edsportshots.com/sitemap.xml`. La vérification Search Console reste une étape liée à ton compte Google et n'est donc pas incluse dans le dépôt.
 
 ## Structure du contenu
 
