@@ -1,0 +1,34 @@
+<section class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 pt-10 md:px-14 md:pt-16">
+  <div class="flex items-center gap-3">
+    <span class="inline-block h-1 w-11 bg-accent"></span>
+    <span class="text-xs font-bold uppercase tracking-[0.24em] text-accent">Saison en cours</span>
+  </div>
+  <h1 class="font-display text-6xl uppercase leading-[0.86] tracking-tight md:text-8xl">Reportages</h1>
+  <p class="max-w-[540px] text-[15px] leading-relaxed text-text-muted">
+    Un match, une série complète : le contexte, le score, et la galerie de photos livrées au club.
+  </p>
+</section>
+
+<section class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 py-10 md:px-14">
+  @for (reportage of content.reportages; track reportage.slug) {
+    <a [routerLink]="['/reportages', reportage.slug]" class="flex flex-col bg-surface sm:flex-row">
+      <img
+        [src]="reportage.cover.src"
+        [alt]="reportage.cover.alt"
+        class="h-[220px] w-full object-cover sm:h-auto sm:w-[300px] sm:shrink-0"
+      />
+      <div class="flex flex-1 flex-col justify-center gap-3 px-6 py-6 sm:px-9">
+        <span class="text-xs font-bold uppercase tracking-[0.18em] text-accent"
+          >{{ reportage.category }} · {{ reportage.location }} · {{ monthYear(reportage.date) }}</span
+        >
+        <span class="font-display text-3xl uppercase leading-none tracking-tight text-text md:text-4xl"
+          >{{ reportage.clubA }} vs {{ reportage.clubB }}</span
+        >
+        <div class="flex items-center justify-between pt-1.5">
+          <span class="text-[15px] text-text-muted">{{ reportage.photos.length }} photos</span>
+          <span class="text-sm font-bold uppercase tracking-wider text-text">Voir le reportage &rarr;</span>
+        </div>
+      </div>
+    </a>
+  }
+</section>

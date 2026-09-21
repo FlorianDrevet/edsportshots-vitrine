@@ -4,5 +4,7 @@ Thumbs.db
 .env.*
 node_modules/
 dist/
+.angular/
+out-tsc/
 .azure/
 

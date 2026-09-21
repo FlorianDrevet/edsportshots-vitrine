@@ -1,0 +1,100 @@
+<section class="mx-auto flex max-w-[1440px] flex-col items-start justify-between gap-6 px-5 pt-10 md:flex-row md:items-end md:px-14 md:pt-16">
+  <div class="flex flex-col gap-4">
+    <div class="flex items-center gap-3">
+      <span class="inline-block h-1 w-11 bg-accent"></span>
+      <span class="text-xs font-bold uppercase tracking-[0.24em] text-accent">Clubs · joueurs · tournois</span>
+    </div>
+    <h1 class="font-display text-6xl uppercase leading-[0.86] tracking-tight md:text-8xl">Formules</h1>
+  </div>
+  <p class="max-w-[420px] text-[15px] leading-relaxed text-text-muted md:text-right">
+    Trois façons de travailler ensemble. Déplacement inclus dans un rayon de {{ content.site.radiusKm }} km autour de
+    {{ content.site.city }}.
+  </p>
+</section>
+
+<section class="mx-auto grid max-w-[1440px] grid-cols-1 gap-3.5 px-5 py-10 sm:grid-cols-3 md:px-14">
+  @for (formule of content.site.formules; track formule.title) {
+    <div
+      class="flex flex-col gap-4 px-7 py-7"
+      [class.bg-accent]="formule.highlight"
+      [class.text-accent-ink]="formule.highlight"
+      [class.bg-surface]="!formule.highlight"
+    >
+      <span class="font-display text-[28px] uppercase">{{ formule.title }}</span>
+      <span class="text-[15px]" [class.text-text-dim]="!formule.highlight">{{ formule.subtitle }}</span>
+      <ul class="flex flex-1 flex-col gap-2.5 pl-4 text-[15px] leading-relaxed" [class.text-text-muted]="!formule.highlight">
+        @for (feature of formule.features; track feature) {
+          <li class="list-disc">{{ feature }}</li>
+        }
+      </ul>
+      <div class="flex flex-col gap-0.5 border-t-2 pt-4" [class.border-border]="!formule.highlight" [style.border-color]="formule.highlight ? '#A8CC2A' : ''">
+        <span class="text-[11px] font-bold uppercase tracking-[0.18em]" [class.text-text-dim]="!formule.highlight">
+          {{ formule.price === 'Sur devis' ? 'Formule annuelle' : 'À partir de' }}
+        </span>
+        <span class="font-display text-[38px]" [class.text-accent]="!formule.highlight">{{ formule.price }}</span>
+      </div>
+    </div>
+  }
+</section>
+
+<section class="mx-auto flex max-w-[1440px] flex-col gap-7 px-5 py-12 md:px-14">
+  <h2 class="font-display text-4xl uppercase leading-none tracking-tight md:text-6xl">Comment ça marche</h2>
+  <ol class="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-4">
+    @for (step of steps; track step.title; let i = $index) {
+      <li class="flex flex-col gap-2.5 bg-surface px-6 py-6">
+        <span class="font-display text-4xl leading-none text-accent">{{ (i + 1).toString().padStart(2, '0') }}</span>
+        <span class="text-lg font-bold">{{ step.title }}</span>
+        <span class="text-[15px] leading-relaxed text-text-muted">{{ step.text }}</span>
+      </li>
+    }
+  </ol>
+</section>
+
+<section class="mx-auto flex max-w-[1440px] flex-col gap-6 bg-surface px-5 py-9 sm:flex-row md:mx-auto md:mt-4 md:px-9">
+  <img
+    [src]="content.site.heroPhoto.src"
+    [alt]="content.site.heroPhoto.alt"
+    class="h-[220px] w-full shrink-0 object-cover sm:h-auto sm:w-[280px]"
+  />
+  <div class="flex flex-col justify-center gap-4 py-2">
+    <h2 class="font-display text-3xl uppercase leading-none tracking-tight md:text-[42px]">Pourquoi passer par moi</h2>
+    <p class="max-w-[820px] text-[17px] leading-relaxed text-text-muted">
+      Je suis du coin et je couvre les matchs de la Loire. Je bouge avec le jeu pour attraper l'action au bon moment,
+      et je livre des images prêtes à poster.
+    </p>
+    <p class="max-w-[820px] text-[17px] leading-relaxed text-text-muted">
+      [UNE PHRASE À TOI — ton matériel, ton parcours, ou ce que les clubs te disent après coup.]
+    </p>
+  </div>
+</section>
+
+<section id="contact" class="mx-auto max-w-[1440px] px-5 py-16 md:px-14">
+  <div class="flex flex-col gap-8 bg-accent px-6 py-9 text-accent-ink md:flex-row md:items-center md:gap-14 md:px-11">
+    <div class="flex w-full flex-col gap-3 md:w-[420px] md:shrink-0">
+      <h2 class="font-display text-4xl uppercase leading-[0.9] tracking-tight md:text-5xl">Un match&nbsp;? Écris-moi.</h2>
+      <p class="text-base leading-relaxed">La date, le lieu, la catégorie — je te réponds au plus vite avec un devis.</p>
+      <span class="text-base font-semibold">{{ content.site.email }} · {{ content.site.phone }}</span>
+      <a [href]="content.site.instagramUrl" class="inline-flex items-center gap-2.5 text-base font-bold"
+        >{{ content.site.instagramHandle }}</a
+      >
+    </div>
+    <div class="flex flex-1 flex-col gap-3">
+      <p class="text-[15px] leading-relaxed">
+        Pas de formulaire ici — envoie-moi directement un email avec les infos du match, le bouton ci-dessous prépare
+        le message pour toi.
+      </p>
+      <div class="flex flex-col gap-3 sm:flex-row">
+        <a
+          [href]="mailtoHref"
+          class="flex h-14 flex-1 items-center justify-center bg-bg px-8 text-sm font-bold uppercase tracking-wider text-accent"
+          >Envoyer la demande par email</a
+        >
+        <a
+          [href]="'tel:' + content.site.phone"
+          class="flex h-14 items-center justify-center border-2 border-bg px-8 text-sm font-bold uppercase tracking-wider"
+          >Appeler</a
+        >
+      </div>
+    </div>
+  </div>
+</section>

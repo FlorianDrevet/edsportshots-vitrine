@@ -1,0 +1,100 @@
+[
+  {
+    "slug": "u18-d2-chamboeuf-2026-09",
+    "category": "U18 D2",
+    "location": "Chamboeuf (42)",
+    "date": "2026-09-14",
+    "clubA": "[Club A]",
+    "clubB": "[Club B]",
+    "score": { "a": 2, "b": 1 },
+    "deliveredCount": 46,
+    "story": "[DEUX OU TROIS PHRASES SUR CE MATCH — le contexte, ce qui s'est joué, le moment que tu attendais. C'est ce petit texte qui transforme une galerie en reportage : court, direct, écrit comme tu le raconterais.]",
+    "cover": {
+      "src": "images/reportages/u18-d2-chamboeuf-2026-09/01-cover-duel.jpg",
+      "alt": "Duel entre un joueur en blanc et un joueur en vert, ballon au sol",
+      "tags": ["u18-d2", "action"],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/u18-d2-chamboeuf-2026-09/01-cover-duel.jpg",
+        "alt": "Duel entre un joueur en blanc et un joueur en vert, ballon au sol",
+        "tags": ["u18-d2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d2-chamboeuf-2026-09/02-ballon.jpg",
+        "alt": "Un joueur en vert et orange protège le ballon",
+        "tags": ["u18-d2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d2-chamboeuf-2026-09/03-numero9.jpg",
+        "alt": "Le numéro 9 s'élance ballon au pied",
+        "tags": ["u18-d2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d2-chamboeuf-2026-09/04-portrait-joueur.jpg",
+        "alt": "Joueur en maillot vert et orange, la main sur la joue",
+        "tags": ["u18-d2", "portrait"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d2-chamboeuf-2026-09/05-gardien.jpg",
+        "alt": "Le gardien s'élance vers le ballon",
+        "tags": ["u18-d2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d2-chamboeuf-2026-09/06-coach.jpg",
+        "alt": "L'entraîneur donne ses consignes depuis le bord du terrain",
+        "tags": ["u18-d2", "portrait"],
+        "inBook": true
+      }
+    ]
+  },
+  {
+    "slug": "u18-d1-2026-09",
+    "category": "U18 D1",
+    "location": "[LIEU]",
+    "date": "2026-09-07",
+    "clubA": "[Club A]",
+    "clubB": "[Club B]",
+    "score": { "a": 3, "b": 0 },
+    "deliveredCount": 28,
+    "story": "[DEUX OU TROIS PHRASES SUR CE MATCH — le contexte, ce qui s'est joué, le moment que tu attendais. C'est ce petit texte qui transforme une galerie en reportage : court, direct, écrit comme tu le raconterais.]",
+    "cover": {
+      "src": "images/reportages/u18-d1-2026-09/01-cover-tacle.jpg",
+      "alt": "Un joueur en noir tacle devant un joueur en vert",
+      "tags": ["u18-d1", "action"],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/u18-d1-2026-09/01-cover-tacle.jpg",
+        "alt": "Un joueur en noir tacle devant un joueur en vert",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-2026-09/02-touche.jpg",
+        "alt": "Le numéro 12 s'apprête à jouer une touche",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-2026-09/03-numero11-profil.jpg",
+        "alt": "Le numéro 11 de profil, le regard vers le jeu",
+        "tags": ["u18-d1", "portrait"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-2026-09/04-numero11-lutte.jpg",
+        "alt": "Le numéro 11 en vert à la lutte avec un joueur en noir",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+<footer class="mt-auto border-t-2 border-border">
+  <div
+    class="mx-auto flex max-w-[1440px] flex-col gap-8 px-5 py-10 md:flex-row md:items-center md:justify-between md:px-14"
+  >
+    <div class="flex items-center gap-3">
+      <span class="flex h-9 w-9 items-center justify-center bg-accent font-display text-base text-bg">ED</span>
+      <div class="flex flex-col gap-0.5">
+        <span class="font-display text-base text-text">SPORTSHOTS</span>
+        <span class="text-[13px] text-text-dim">{{ content.site.photographerFirstName }} D. — photographe de sport, Loire (42)</span>
+      </div>
+    </div>
+
+    <nav class="flex flex-wrap gap-6 md:gap-9">
+      <a routerLink="/" class="text-sm text-text-muted hover:text-accent">Accueil</a>
+      <a routerLink="/galerie" class="text-sm text-text-muted hover:text-accent">Le book</a>
+      <a routerLink="/reportages" class="text-sm text-text-muted hover:text-accent">Reportages</a>
+      <a routerLink="/prestations" class="text-sm text-text-muted hover:text-accent">Formules</a>
+      <a [href]="content.site.instagramUrl" class="text-sm text-text-muted hover:text-accent">{{ content.site.instagramHandle }}</a>
+    </nav>
+
+    <span class="max-w-[300px] text-[13px] text-text-dim md:text-right">{{ content.site.copyright }}</span>
+  </div>
+</footer>

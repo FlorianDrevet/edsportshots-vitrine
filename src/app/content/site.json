@@ -1,0 +1,70 @@
+{
+  "name": "EDSPORTSHOTS",
+  "tagline": "Photographe de foot · Loire 42",
+  "photographerFirstName": "Evan",
+  "email": "contact@edsportshots.fr",
+  "phone": "06 00 00 00 00",
+  "city": "[TA VILLE]",
+  "radiusKm": 30,
+  "instagramHandle": "@ed_sportshots",
+  "instagramUrl": "https://www.instagram.com/ed_sportshots",
+  "heroPhoto": {
+    "src": "images/reportages/u18-d2-chamboeuf-2026-09/04-portrait-joueur.jpg",
+    "alt": "Joueur en maillot vert et orange, la main sur la joue"
+  },
+  "bio": [
+    "Je photographie le football amateur dans la Loire, au bord du terrain, du coup d'envoi au coup de sifflet final. Ce que je cherche : le duel au bon moment, la course, le regard juste après l'action.",
+    "[TON PARCOURS EN UNE PHRASE — depuis quand tu shootes, ce qui t'a amené au foot.]"
+  ],
+  "stats": [
+    { "value": "[N]", "label": "Matchs couverts" },
+    { "value": "[N]", "label": "Clubs suivis" },
+    { "value": "[BOÎTIER]", "label": "Matériel" }
+  ],
+  "portrait": {
+    "src": "images/profil/evan-drevet.png",
+    "alt": "Portrait d'Evan Drevet, photographe EDSPORTSHOTS"
+  },
+  "formules": [
+    {
+      "title": "Un match",
+      "subtitle": "Le format de base.",
+      "features": [
+        "De l'échauffement au coup de sifflet final",
+        "[N] photos retouchées, livrées sous [DÉLAI]",
+        "Formats web et impression",
+        "Galerie en ligne à partager aux joueurs",
+        "Droit d'usage pour la com du club"
+      ],
+      "price": "[TARIF] €",
+      "highlight": false
+    },
+    {
+      "title": "Portraits d'équipe",
+      "subtitle": "En début de saison, avant ou après l'entraînement.",
+      "features": [
+        "Photo officielle de l'équipe complète",
+        "Portrait individuel de chaque joueur",
+        "Déclinaisons verticales pour les stories",
+        "Fond neutre ou terrain, au choix",
+        "Séance d'environ [DURÉE] sur place"
+      ],
+      "price": "[TARIF] €",
+      "highlight": true
+    },
+    {
+      "title": "La saison",
+      "subtitle": "Pour alimenter les réseaux du club toute l'année.",
+      "features": [
+        "[N] matchs couverts dans la saison",
+        "Banque d'images accessible au club",
+        "Contenu prêt à poster chaque semaine",
+        "Portraits d'équipe inclus",
+        "Tarif dégressif selon le volume"
+      ],
+      "price": "Sur devis",
+      "highlight": false
+    }
+  ],
+  "copyright": "Toutes les images © Evan D. — reproduction interdite sans accord."
+}
