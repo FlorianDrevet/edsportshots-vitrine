@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './core/layouts/footer/footer.component';
 import { NavigationComponent } from './core/layouts/navigation/navigation.component';
+import { AnalyticsService } from './shared/services/analytics.service';
+import { SeoService } from './shared/services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +14,6 @@ import { NavigationComponent } from './core/layouts/navigation/navigation.compon
 })
 export class AppComponent {
   title = 'EDSPORTSHOTS';
+
+  constructor(readonly analytics: AnalyticsService, readonly seo: SeoService) {}
 }

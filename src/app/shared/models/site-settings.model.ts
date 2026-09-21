@@ -6,6 +6,13 @@ export interface Formule {
   highlight: boolean;
 }
 
+export interface AnalyticsSettings {
+  /** GA4 measurement ID, for example G-XXXXXXXXXX. */
+  googleAnalyticsId: string;
+  /** Microsoft Clarity project ID. */
+  clarityProjectId: string;
+}
+
 export interface SiteSettings {
   name: string;
   tagline: string;
@@ -22,4 +29,5 @@ export interface SiteSettings {
   portrait: { src: string; alt: string } | null;
   formules: Formule[];
   copyright: string;
+  analytics?: AnalyticsSettings;
 }

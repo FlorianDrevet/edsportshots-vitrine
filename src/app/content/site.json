@@ -8,6 +8,10 @@
   "radiusKm": 30,
   "instagramHandle": "@ed_sportshots",
   "instagramUrl": "https://www.instagram.com/ed_sportshots",
+  "analytics": {
+    "googleAnalyticsId": "",
+    "clarityProjectId": ""
+  },
   "heroPhoto": {
     "src": "images/reportages/u18-d2-chamboeuf-2026-09/04-portrait-joueur.jpg",
     "alt": "Joueur en maillot vert et orange, la main sur la joue"

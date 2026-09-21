@@ -37,6 +37,23 @@ Rien à faire manuellement : un `git push` sur `main` suffit à mettre le site e
 
 Le fichier `public/staticwebapp.config.json` indique à Azure de rediriger toute URL inconnue (ex. `/reportages/un-match`) vers `index.html`, pour que le routage Angular fonctionne aussi au rechargement direct d'une page.
 
+## Analytics et indexation
+
+Les intégrations Google Analytics 4 et Microsoft Clarity sont prêtes dans `src/app/shared/services/analytics.service.ts`. Elles restent inactives tant que leurs identifiants ne sont pas renseignés dans `src/app/content/site.json` :
+
+```json
+"analytics": {
+  "googleAnalyticsId": "G-XXXXXXXXXX",
+  "clarityProjectId": "XXXXXXXXXX"
+}
+```
+
+Google Analytics suit les pages vues initiales et les changements de route Angular. Clarity est chargé en parallèle. Les titres de pages et les URLs canoniques sont aussi mis à jour lors des navigations Angular. Les identifiants sont publics par nature, mais les outils de mesure doivent être déclarés dans la politique de confidentialité et soumis au consentement nécessaire avant mise en production en France.
+
+Les fichiers `public/robots.txt` et `public/sitemap.xml` sont régénérés avant chaque build à partir des routes et des reportages présents. Le domaine utilisé par défaut est `https://edsportshots.fr`. Pour une autre URL, utilise `EDS_SITE_URL` pendant le build, par exemple `EDS_SITE_URL=https://www.exemple.fr npm run build`.
+
+Après publication, ajoute le domaine dans Google Search Console puis soumets `https://edsportshots.fr/sitemap.xml`. La vérification Search Console reste une étape liée à ton compte Google et n'est donc pas incluse dans le dépôt.
+
 ## Structure du contenu
 
 Tout le texte et toutes les photos du site viennent de deux fichiers, sans avoir besoin de toucher au code :
