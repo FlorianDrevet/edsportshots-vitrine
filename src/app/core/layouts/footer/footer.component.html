@@ -20,4 +20,16 @@
 
     <span class="max-w-[300px] text-[13px] text-text-dim md:text-right">{{ content.site.copyright }}</span>
   </div>
+
+  <div class="mx-auto max-w-[1440px] border-t border-border px-5 py-5 md:px-14">
+    <nav aria-label="Informations légales" class="flex flex-wrap gap-x-5 gap-y-2 text-[13px] text-text-dim">
+      @for (item of legalLinks; track item.path) {
+        <a [routerLink]="item.path" class="text-text-dim hover:text-accent">{{ item.label }}</a>
+      }
+      <button type="button" (click)="consent.reopen()" class="text-text-dim underline hover:text-accent">Gérer les cookies</button>
+      <a [href]="content.site.legal.siteCreditUrl" target="_blank" rel="noopener noreferrer" class="text-text-dim hover:text-accent"
+        >Réalisé par {{ content.site.legal.siteCredit }}</a
+      >
+    </nav>
+  </div>
 </footer>

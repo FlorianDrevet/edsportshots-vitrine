@@ -21,6 +21,36 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.edsportshots.com/mentions-legales</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.edsportshots.com/politique-de-confidentialite</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.edsportshots.com/cookies</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.edsportshots.com/conditions-generales-de-vente</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.edsportshots.com/droit-a-l-image</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.edsportshots.com/accessibilite</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
     <loc>https://www.edsportshots.com/reportages/u18-d2-chamboeuf-2026-09</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>

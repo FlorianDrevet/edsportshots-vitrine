@@ -1,0 +1,179 @@
+<section class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 pt-10 md:px-14 md:pt-16">
+  <div class="flex items-center gap-3">
+    <span class="inline-block h-1 w-11 bg-accent"></span>
+    <span class="text-xs font-bold uppercase tracking-[0.24em] text-accent">Vos choix · traceurs</span>
+  </div>
+  <h1 class="font-display text-5xl uppercase leading-[0.86] tracking-tight md:text-8xl">Cookies</h1>
+  <p class="max-w-[820px] text-[17px] leading-relaxed text-text-muted">
+    Cette page liste tous les cookies et traceurs que le site peut utiliser, et vous permet de modifier votre choix à
+    tout moment. Les outils de mesure d’audience ne sont chargés qu’après votre accord : tant que vous n’avez rien
+    accepté, aucun cookie de mesure n’est déposé.
+  </p>
+  <p class="text-[13px] text-text-dim">Dernière mise à jour : {{ content.site.legal.lastUpdated }}</p>
+</section>
+
+<section class="mx-auto max-w-[1440px] px-5 py-10 md:px-14">
+  <div class="flex flex-col gap-6 bg-surface px-6 py-7 md:px-9">
+    <div class="flex flex-col gap-2">
+      <h2 class="font-display text-2xl uppercase tracking-tight md:text-3xl">Vos préférences</h2>
+      <p class="text-[15px] text-text-muted" aria-live="polite">
+        {{ statusLabel() }}
+        @if (consent.decision(); as decision) {
+          <span class="text-text-dim">
+            Choix enregistré le {{ decision.date | date: "dd/MM/y 'à' HH:mm" }}, valable jusqu’au
+            {{ consent.expiresAt() | date: 'dd/MM/y' }}.
+          </span>
+        }
+      </p>
+    </div>
+
+    <ul class="flex flex-col">
+      @for (service of services; track service.name) {
+        <li class="flex items-start justify-between gap-5 border-t-2 border-border py-4">
+          <div class="flex flex-col gap-1">
+            @if (service.key) {
+              <label [for]="'pref-' + service.key" class="text-base font-bold">{{ service.name }}</label>
+            } @else {
+              <span class="text-base font-bold">{{ service.name }}</span>
+            }
+            <span class="text-sm leading-relaxed text-text-muted">{{ service.summary }}</span>
+          </div>
+          @if (service.key) {
+            <span class="relative mt-1 inline-flex h-6 w-11 shrink-0 items-center">
+              <input
+                type="checkbox"
+                role="switch"
+                [id]="'pref-' + service.key"
+                class="peer absolute inset-0 z-10 h-full w-full cursor-pointer opacity-0"
+                [checked]="draft()[service.key]"
+                (change)="toggle(service.key)"
+              />
+              <span class="absolute inset-0 bg-border-strong transition peer-checked:bg-accent peer-focus-visible:outline peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-accent"></span>
+              <span class="absolute left-1 top-1 h-4 w-4 bg-text transition peer-checked:translate-x-5 peer-checked:bg-accent-ink"></span>
+            </span>
+          } @else {
+            <span class="mt-1 shrink-0 text-xs font-bold uppercase tracking-wider text-text-dim">Toujours actif</span>
+          }
+        </li>
+      }
+    </ul>
+
+    <div class="flex flex-col gap-3 sm:flex-row">
+      <button
+        type="button"
+        (click)="save()"
+        [disabled]="!isDirty() && !!consent.decision()"
+        class="h-12 bg-accent px-7 text-sm font-bold uppercase tracking-wider text-accent-ink hover:opacity-90 disabled:opacity-40"
+      >
+        Enregistrer mes choix
+      </button>
+      <button
+        type="button"
+        (click)="rejectAll()"
+        class="h-12 border-2 border-border-strong px-7 text-sm font-bold uppercase tracking-wider hover:border-accent hover:text-accent"
+      >
+        Tout refuser
+      </button>
+      <button
+        type="button"
+        (click)="acceptAll()"
+        class="h-12 border-2 border-border-strong px-7 text-sm font-bold uppercase tracking-wider hover:border-accent hover:text-accent"
+      >
+        Tout accepter
+      </button>
+    </div>
+    @if (saved()) {
+      <p class="text-sm font-semibold text-accent" role="status">Vos choix ont bien été enregistrés.</p>
+    }
+  </div>
+</section>
+
+<section class="mx-auto flex max-w-[1440px] flex-col gap-10 px-5 pb-10 md:px-14">
+  <div class="flex max-w-[900px] flex-col gap-3">
+    <h2 class="font-display text-3xl uppercase leading-none tracking-tight md:text-5xl">C’est quoi, un cookie&nbsp;?</h2>
+    <p class="text-[15px] leading-relaxed text-text-muted">
+      Un cookie (ou traceur) est un petit fichier ou une information enregistrée dans votre navigateur lorsque vous
+      consultez un site. Conformément à l’article 82 de la loi Informatique et Libertés et aux lignes directrices de la
+      CNIL, seuls les traceurs strictement nécessaires au fonctionnement du site peuvent être utilisés sans votre
+      consentement. Les traceurs de mesure d’audience décrits ci-dessous nécessitent votre accord préalable, que vous
+      pouvez refuser aussi facilement que l’accepter, et retirer à tout moment.
+    </p>
+    <p class="text-[15px] leading-relaxed text-text-muted">
+      Ce site n’utilise <strong class="text-text">aucun cookie publicitaire</strong>, aucun module de réseau social
+      intégré (le lien Instagram est un simple lien) et aucune ressource chargée depuis un service tiers avant votre
+      consentement : les polices de caractères sont hébergées sur le site lui-même. Votre choix est conservé
+      {{ consentMaxAgeMonths }} mois, puis la question vous est reposée.
+    </p>
+  </div>
+
+  @for (service of services; track service.name) {
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-1">
+        <h3 class="text-xl font-bold">{{ service.name }}</h3>
+        <p class="text-sm text-text-dim">
+          Émetteur : {{ service.provider }} ·
+          @if (service.privacyUrl.startsWith('/')) {
+            <a [routerLink]="service.privacyUrl" class="text-accent underline">politique de confidentialité</a>
+          } @else {
+            <a [href]="service.privacyUrl" target="_blank" rel="noopener noreferrer" class="text-accent underline"
+              >politique de confidentialité de l’émetteur</a
+            >
+          }
+          · {{ service.key ? 'Soumis à votre consentement' : 'Exempté de consentement' }}
+        </p>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[640px] border-collapse text-left text-sm">
+          <thead>
+            <tr class="border-b-2 border-border-strong text-xs uppercase tracking-wider text-text-dim">
+              <th scope="col" class="py-3 pr-4 font-bold">Nom</th>
+              <th scope="col" class="py-3 pr-4 font-bold">Finalité</th>
+              <th scope="col" class="py-3 pr-4 font-bold">Durée</th>
+              <th scope="col" class="py-3 font-bold">Domaine</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (cookie of service.cookies; track cookie.name) {
+              <tr class="border-b border-border align-top">
+                <td class="py-3 pr-4 font-mono text-[13px] text-text">{{ cookie.name }}</td>
+                <td class="py-3 pr-4 text-text-muted">{{ cookie.purpose }}</td>
+                <td class="whitespace-nowrap py-3 pr-4 text-text-muted">{{ cookie.duration }}</td>
+                <td class="py-3 font-mono text-[13px] text-text-muted">{{ cookie.domain }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  }
+
+  <div class="flex max-w-[900px] flex-col gap-3">
+    <h2 class="font-display text-3xl uppercase leading-none tracking-tight md:text-5xl">Transferts hors UE</h2>
+    <p class="text-[15px] leading-relaxed text-text-muted">
+      Google et Microsoft peuvent traiter les données de mesure aux États-Unis. Ces transferts sont encadrés par la
+      décision d’adéquation de la Commission européenne du 10 juillet 2023 (EU-U.S. Data Privacy Framework), à laquelle
+      Google LLC et Microsoft Corporation ont adhéré, complétée par les clauses contractuelles types de la Commission.
+      Les données sont exclusivement utilisées pour produire des statistiques de fréquentation du site.
+    </p>
+  </div>
+
+  <div class="flex max-w-[900px] flex-col gap-3">
+    <h2 class="font-display text-3xl uppercase leading-none tracking-tight md:text-5xl">Via votre navigateur</h2>
+    <p class="text-[15px] leading-relaxed text-text-muted">
+      Vous pouvez aussi bloquer ou supprimer les cookies depuis les réglages de votre navigateur :
+      @for (link of browserLinks; track link.name; let last = $last) {
+        <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="text-accent underline">{{ link.name }}</a
+        >{{ last ? '.' : ', ' }}
+      }
+      Pour Google Analytics, Google propose également un
+      <a href="https://tools.google.com/dlpage/gaoptout?hl=fr" target="_blank" rel="noopener noreferrer" class="text-accent underline"
+        >module de désactivation</a
+      >.
+    </p>
+    <p class="text-[15px] leading-relaxed text-text-muted">
+      Une question sur les cookies ou vos données&nbsp;? Écrivez à
+      <a [href]="'mailto:' + content.site.email" class="text-accent underline">{{ content.site.email }}</a>. Voir aussi la
+      <a routerLink="/politique-de-confidentialite" class="text-accent underline">politique de confidentialité</a>.
+    </p>
+  </div>
+</section>

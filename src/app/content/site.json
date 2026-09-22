@@ -12,6 +12,30 @@
     "googleAnalyticsId": "G-FQZHP3MKCL",
     "clarityProjectId": "ylzgmnfikn"
   },
+  "legal": {
+    "siteUrl": "https://www.edsportshots.com",
+    "ownerFullName": "Evan Drevet",
+    "legalStatus": "[STATUT — ex. Entrepreneur individuel (EI), régime micro-entrepreneur]",
+    "siret": "[NUMÉRO SIRET — 14 chiffres]",
+    "registration": "Immatriculé au Registre national des entreprises (RNE)",
+    "postalAddress": "[ADRESSE POSTALE PROFESSIONNELLE — ou adresse de domiciliation]",
+    "vatStatement": "TVA non applicable, article 293 B du Code général des impôts",
+    "publicationDirector": "Evan Drevet",
+    "mediator": {
+      "name": "[NOM DU MÉDIATEUR DE LA CONSOMMATION]",
+      "url": "[SITE WEB DU MÉDIATEUR]",
+      "address": "[ADRESSE DU MÉDIATEUR]"
+    },
+    "quoteValidityDays": 30,
+    "depositPercent": "[ACOMPTE — ex. 30] %",
+    "deliveryDelay": "[DÉLAI DE LIVRAISON — ex. 7 jours]",
+    "mileageRate": "[TARIF KILOMÉTRIQUE — ex. 0,40 €/km]",
+    "licenseDurationYears": 10,
+    "emailProvider": "[FOURNISSEUR DE MESSAGERIE — ex. OVHcloud, Google Workspace]",
+    "lastUpdated": "22 septembre 2026",
+    "siteCredit": "Florian Drevet",
+    "siteCreditUrl": "https://github.com/FlorianDrevet"
+  },
   "heroPhoto": {
     "src": "images/reportages/u18-d2-chamboeuf-2026-09/04-portrait-joueur.jpg",
     "alt": "Joueur en maillot vert et orange, la main sur la joue"
@@ -21,9 +45,18 @@
     "[TON PARCOURS EN UNE PHRASE — depuis quand tu shootes, ce qui t'a amené au foot.]"
   ],
   "stats": [
-    { "value": "[N]", "label": "Matchs couverts" },
-    { "value": "[N]", "label": "Clubs suivis" },
-    { "value": "[BOÎTIER]", "label": "Matériel" }
+    {
+      "value": "[N]",
+      "label": "Matchs couverts"
+    },
+    {
+      "value": "[N]",
+      "label": "Clubs suivis"
+    },
+    {
+      "value": "[BOÎTIER]",
+      "label": "Matériel"
+    }
   ],
   "portrait": {
     "src": "images/profil/evan-drevet.png",

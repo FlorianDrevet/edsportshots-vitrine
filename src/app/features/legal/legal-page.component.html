@@ -1,0 +1,43 @@
+@let current = page();
+
+<section class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 pt-10 md:px-14 md:pt-16">
+  <div class="flex items-center gap-3">
+    <span class="inline-block h-1 w-11 bg-accent"></span>
+    <span class="text-xs font-bold uppercase tracking-[0.24em] text-accent">{{ current.eyebrow }}</span>
+  </div>
+  <h1 class="font-display text-4xl uppercase leading-[0.9] tracking-tight md:text-7xl">{{ current.title }}</h1>
+  <p class="max-w-[900px] text-[17px] leading-relaxed text-text-muted">{{ current.intro }}</p>
+  <p class="text-[13px] text-text-dim">Dernière mise à jour : {{ content.site.legal.lastUpdated }}</p>
+</section>
+
+<section class="mx-auto flex max-w-[1440px] flex-col px-5 py-10 md:px-14">
+  @for (section of current.sections; track section.title) {
+    <article class="flex max-w-[900px] flex-col gap-3 border-t-2 border-border py-7">
+      <h2 class="text-xl font-bold md:text-2xl">{{ section.title }}</h2>
+      @for (paragraph of section.paragraphs ?? []; track $index) {
+        <p class="text-[15px] leading-relaxed text-text-muted">{{ paragraph }}</p>
+      }
+      @if (section.bullets?.length) {
+        <ul class="flex flex-col gap-2 pl-5 text-[15px] leading-relaxed text-text-muted">
+          @for (bullet of section.bullets; track $index) {
+            <li class="list-disc">{{ bullet }}</li>
+          }
+        </ul>
+      }
+      @if (section.note) {
+        <p class="border-l-4 border-accent bg-surface px-5 py-4 text-sm leading-relaxed text-text">{{ section.note }}</p>
+      }
+      @if (section.links?.length) {
+        <p class="flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+          @for (item of section.links; track item.href) {
+            @if (item.href.startsWith('/')) {
+              <a [routerLink]="item.href" class="text-accent underline">{{ item.label }} →</a>
+            } @else {
+              <a [href]="item.href" target="_blank" rel="noopener noreferrer" class="text-accent underline">{{ item.label }} ↗</a>
+            }
+          }
+        </p>
+      }
+    </article>
+  }
+</section>

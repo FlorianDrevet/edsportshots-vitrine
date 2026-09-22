@@ -20,6 +20,8 @@ const pages = [
   { path: '/galerie', changefreq: 'weekly', priority: '0.8' },
   { path: '/reportages', changefreq: 'weekly', priority: '0.8' },
   { path: '/prestations', changefreq: 'monthly', priority: '0.7' },
+  ...['/mentions-legales', '/politique-de-confidentialite', '/cookies', '/conditions-generales-de-vente', '/droit-a-l-image', '/accessibilite']
+    .map((legalPath) => ({ path: legalPath, changefreq: 'yearly', priority: '0.2' })),
   ...reportages.map((reportage) => ({
     path: `/reportages/${reportage.slug}`,
     lastmod: reportage.date,

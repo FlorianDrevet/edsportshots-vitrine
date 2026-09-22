@@ -13,6 +13,28 @@ export interface AnalyticsSettings {
   clarityProjectId: string;
 }
 
+/** Everything the legal pages (mentions légales, CGV, confidentialité...) need about the business. */
+export interface LegalSettings {
+  siteUrl: string;
+  ownerFullName: string;
+  legalStatus: string;
+  siret: string;
+  registration: string;
+  postalAddress: string;
+  vatStatement: string;
+  publicationDirector: string;
+  mediator: { name: string; url: string; address: string };
+  quoteValidityDays: number;
+  depositPercent: string;
+  deliveryDelay: string;
+  mileageRate: string;
+  licenseDurationYears: number;
+  emailProvider: string;
+  lastUpdated: string;
+  siteCredit: string;
+  siteCreditUrl: string;
+}
+
 export interface SiteSettings {
   name: string;
   tagline: string;
@@ -30,4 +52,5 @@ export interface SiteSettings {
   formules: Formule[];
   copyright: string;
   analytics?: AnalyticsSettings;
+  legal: LegalSettings;
 }

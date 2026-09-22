@@ -48,7 +48,37 @@ Les intégrations Google Analytics 4 et Microsoft Clarity sont prêtes dans `src
 }
 ```
 
-Google Analytics suit les pages vues initiales et les changements de route Angular. Clarity est chargé en parallèle. Les titres de pages et les URLs canoniques sont aussi mis à jour lors des navigations Angular. Les identifiants sont publics par nature, mais les outils de mesure doivent être déclarés dans la politique de confidentialité et soumis au consentement nécessaire avant mise en production en France.
+### Consentement cookies
+
+Aucun outil de mesure n'est chargé avant l'accord du visiteur (article 82 de la loi Informatique et Libertés, lignes directrices CNIL) :
+
+- `src/app/shared/services/cookie-consent.service.ts` enregistre le choix (`localStorage`, clé `eds-cookie-consent`) avec sa date, pour 6 mois. Passé ce délai, ou si `CONSENT_VERSION` est incrémenté, le bandeau réapparaît.
+- `src/app/shared/components/cookie-banner/` affiche le bandeau : « Tout refuser » et « Tout accepter » ont le même poids visuel, « Personnaliser » permet de choisir GA et Clarity séparément.
+- `src/app/features/cookies/` est la page `/cookies` : état actuel du choix, interrupteurs par service et liste détaillée des cookies. Le lien « Gérer les cookies » du pied de page rouvre le bandeau.
+- `analytics.service.ts` charge GA4 (cookies limités à 13 mois, Google Signals et publicité désactivés) et Clarity uniquement si le service est accepté. Si un outil déjà chargé est refusé, ses cookies sont supprimés et la page est rechargée sans lui.
+
+**Ajouter un nouvel outil** (pixel, vidéo intégrée, carte…) : le déclarer dans `src/app/shared/models/cookie-catalog.ts`, le brancher dans `analytics.service.ts`, ajouter sa clé dans `CookiePreferences`, compléter la politique de confidentialité et incrémenter `CONSENT_VERSION`.
+
+Réglages à faire dans les consoles des outils :
+- Google Analytics → Admin → Conservation des données : **14 mois** (valeur annoncée dans la politique de confidentialité).
+- Clarity → Settings → Setup : activer **Cookie consent** (le site envoie le signal `consentv2`), garder le masquage en mode « Balanced » ou « Strict ».
+
+Les polices (Archivo Black, Space Grotesk) sont auto-hébergées via `@fontsource` : aucune requête vers Google Fonts, donc aucune adresse IP transmise à Google sans consentement.
+
+## Pages légales
+
+Toutes les informations légales sont centralisées dans le bloc `legal` de `src/app/content/site.json` ; les textes sont dans `src/app/features/legal/legal-content.ts`.
+
+| Page | Route | Obligation |
+| --- | --- | --- |
+| Mentions légales | `/mentions-legales` | LCEN art. 6, Code de la consommation L111-1 |
+| Politique de confidentialité | `/politique-de-confidentialite` | RGPD art. 13 |
+| Cookies | `/cookies` | Loi Informatique et Libertés art. 82 |
+| CGV | `/conditions-generales-de-vente` | Code de commerce L441-1, Code de la consommation L221-5 |
+| Droit à l'image | `/droit-a-l-image` | Code civil art. 9, RGPD art. 21 |
+| Accessibilité | `/accessibilite` | Démarche volontaire (micro-entreprise exemptée) |
+
+**Avant la mise en ligne**, remplace tous les `[CROCHETS]` du bloc `legal` (statut, SIRET, adresse, médiateur de la consommation, acompte, délai, tarif kilométrique, fournisseur email) et mets à jour `lastUpdated` à chaque modification des textes.
 
 Les fichiers `public/robots.txt` et `public/sitemap.xml` sont régénérés avant chaque build à partir des routes et des reportages présents. Le domaine utilisé par défaut est `https://www.edsportshots.com`. Pour une autre URL, utilise `EDS_SITE_URL` pendant le build, par exemple `EDS_SITE_URL=https://www.exemple.fr npm run build`.
 
