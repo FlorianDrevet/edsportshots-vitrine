@@ -63,7 +63,7 @@
       et je livre des images prêtes à poster.
     </p>
     <p class="max-w-[820px] text-[17px] leading-relaxed text-text-muted">
-      [UNE PHRASE À TOI — ton matériel, ton parcours, ou ce que les clubs te disent après coup.]
+      [UNE PHRASE À TOI - ton matériel, ton parcours, ou ce que les clubs te disent après coup.]
     </p>
   </div>
 </section>
@@ -72,15 +72,15 @@
   <div class="flex flex-col gap-8 bg-accent px-6 py-9 text-accent-ink md:flex-row md:items-center md:gap-14 md:px-11">
     <div class="flex w-full flex-col gap-3 md:w-[420px] md:shrink-0">
       <h2 class="font-display text-4xl uppercase leading-[0.9] tracking-tight md:text-5xl">Un match&nbsp;? Écris-moi.</h2>
-      <p class="text-base leading-relaxed">La date, le lieu, la catégorie — je te réponds au plus vite avec un devis.</p>
-      <span class="text-base font-semibold">{{ content.site.email }} · {{ content.site.phone }}</span>
+      <p class="text-base leading-relaxed">La date, le lieu, la catégorie - je te réponds au plus vite avec un devis.</p>
+      <span class="text-base font-semibold">{{ content.site.email }}</span>
       <a [href]="content.site.instagramUrl" class="inline-flex items-center gap-2.5 text-base font-bold"
         >{{ content.site.instagramHandle }}</a
       >
     </div>
     <div class="flex flex-1 flex-col gap-3">
       <p class="text-[15px] leading-relaxed">
-        Pas de formulaire ici — envoie-moi directement un email avec les infos du match, le bouton ci-dessous prépare
+        Pas de formulaire ici - envoie-moi directement un email avec les infos du match, le bouton ci-dessous prépare
         le message pour toi.
       </p>
       <div class="flex flex-col gap-3 sm:flex-row">
@@ -88,11 +88,6 @@
           [href]="mailtoHref"
           class="flex h-14 flex-1 items-center justify-center bg-bg px-8 text-sm font-bold uppercase tracking-wider text-accent"
           >Envoyer la demande par email</a
-        >
-        <a
-          [href]="'tel:' + content.site.phone"
-          class="flex h-14 items-center justify-center border-2 border-bg px-8 text-sm font-bold uppercase tracking-wider"
-          >Appeler</a
         >
       </div>
     </div>

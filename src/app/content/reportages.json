@@ -8,7 +8,7 @@
     "clubB": "[Club B]",
     "score": { "a": 2, "b": 1 },
     "deliveredCount": 46,
-    "story": "[DEUX OU TROIS PHRASES SUR CE MATCH — le contexte, ce qui s'est joué, le moment que tu attendais. C'est ce petit texte qui transforme une galerie en reportage : court, direct, écrit comme tu le raconterais.]",
+    "story": "[DEUX OU TROIS PHRASES SUR CE MATCH - le contexte, ce qui s'est joué, le moment que tu attendais. C'est ce petit texte qui transforme une galerie en reportage : court, direct, écrit comme tu le raconterais.]",
     "cover": {
       "src": "images/reportages/u18-d2-chamboeuf-2026-09/01-cover-duel.jpg",
       "alt": "Duel entre un joueur en blanc et un joueur en vert, ballon au sol",
@@ -63,7 +63,7 @@
     "clubB": "[Club B]",
     "score": { "a": 3, "b": 0 },
     "deliveredCount": 28,
-    "story": "[DEUX OU TROIS PHRASES SUR CE MATCH — le contexte, ce qui s'est joué, le moment que tu attendais. C'est ce petit texte qui transforme une galerie en reportage : court, direct, écrit comme tu le raconterais.]",
+    "story": "[DEUX OU TROIS PHRASES SUR CE MATCH - le contexte, ce qui s'est joué, le moment que tu attendais. C'est ce petit texte qui transforme une galerie en reportage : court, direct, écrit comme tu le raconterais.]",
     "cover": {
       "src": "images/reportages/u18-d1-2026-09/01-cover-tacle.jpg",
       "alt": "Un joueur en noir tacle devant un joueur en vert",

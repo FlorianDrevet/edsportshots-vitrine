@@ -39,7 +39,7 @@ export function buildLegalPages(site: SiteSettings): Record<LegalPagePath, Legal
   const legal = site.legal;
   const owner = legal.ownerFullName;
   const brand = site.name;
-  const contact = `${site.email} · ${site.phone}`;
+  const contact = site.email;
 
   return {
     [LEGAL_PAGE_PATHS.mentionsLegales]: {
@@ -59,7 +59,6 @@ export function buildLegalPages(site: SiteSettings): Record<LegalPagePath, Legal
             `Adresse : ${legal.postalAddress}`,
             `TVA : ${legal.vatStatement}`,
             `Email : ${site.email}`,
-            `Téléphone : ${site.phone}`,
           ],
         },
         {
@@ -311,7 +310,7 @@ export function buildLegalPages(site: SiteSettings): Record<LegalPagePath, Legal
           ],
           bullets: [
             'Nature : licence non exclusive et non transférable de reproduction et de représentation.',
-            'Usages autorisés : communication propre du club ou du client — site internet, réseaux sociaux, newsletters, affiches, programmes de match, supports internes et presse locale relayant l’actualité du club.',
+            'Usages autorisés : communication propre du club ou du client - site internet, réseaux sociaux, newsletters, affiches, programmes de match, supports internes et presse locale relayant l’actualité du club.',
             `Territoire et durée : monde entier, pour une durée de ${legal.licenseDurationYears} ans à compter de la livraison.`,
             `Crédit obligatoire : « © ${brand} » ou « ${site.instagramHandle} » à proximité de chaque photo, ou dans le texte de la publication sur les réseaux sociaux.`,
             'Usages exclus sans accord écrit et rémunération complémentaire : revente ou cession des photos à des tiers, usage par des sponsors ou partenaires, publicité commerciale, produits dérivés vendus (calendriers, goodies…), concours photo, entraînement de modèles d’intelligence artificielle.',
@@ -333,7 +332,7 @@ export function buildLegalPages(site: SiteSettings): Record<LegalPagePath, Legal
             'Pour l’exercer, le consommateur adresse avant l’expiration du délai une déclaration dénuée d’ambiguïté par email ou courrier, par exemple au moyen du modèle ci-dessous. Les sommes versées sont remboursées dans les 14 jours suivant la réception de la rétractation, par le même moyen de paiement.',
             'Si le consommateur demande expressément que la prestation commence avant la fin du délai de rétractation (par exemple pour un match ayant lieu dans les 14 jours), il reste redevable d’un montant proportionnel au service déjà fourni en cas de rétractation (article L221-25). Il ne peut plus se rétracter une fois la prestation pleinement exécutée, s’il l’a expressément demandé et a reconnu perdre ce droit (article L221-28, 1°).',
           ],
-          note: `Modèle de formulaire de rétractation — À l’attention de ${owner}, ${brand}, ${legal.postalAddress}, ${site.email} : « Je vous notifie par la présente ma rétractation du contrat portant sur la prestation de services ci-dessous : [description]. Commandée le : [date]. Nom du consommateur : [nom]. Adresse du consommateur : [adresse]. Date et signature (en cas d’envoi papier). »`,
+          note: `Modèle de formulaire de rétractation - À l’attention de ${owner}, ${brand}, ${legal.postalAddress}, ${site.email} : « Je vous notifie par la présente ma rétractation du contrat portant sur la prestation de services ci-dessous : [description]. Commandée le : [date]. Nom du consommateur : [nom]. Adresse du consommateur : [adresse]. Date et signature (en cas d’envoi papier). »`,
         },
         {
           title: '10. Garanties légales et réclamations',
@@ -357,7 +356,7 @@ export function buildLegalPages(site: SiteSettings): Record<LegalPagePath, Legal
         {
           title: '13. Médiation et litiges',
           paragraphs: [
-            `En cas de litige, les parties recherchent d’abord une solution amiable. Le client consommateur peut recourir gratuitement au médiateur de la consommation : ${legal.mediator.name} — ${legal.mediator.url} — ${legal.mediator.address}, dans un délai d’un an à compter de sa réclamation écrite.`,
+            `En cas de litige, les parties recherchent d’abord une solution amiable. Le client consommateur peut recourir gratuitement au médiateur de la consommation : ${legal.mediator.name} - ${legal.mediator.url} - ${legal.mediator.address}, dans un délai d’un an à compter de sa réclamation écrite.`,
             'Les présentes CGV sont soumises au droit français. À défaut d’accord amiable, le litige est porté devant les juridictions compétentes. Pour les clients professionnels et associations, compétence est attribuée au tribunal du ressort du domicile professionnel du photographe.',
           ],
         },
@@ -390,14 +389,14 @@ export function buildLegalPages(site: SiteSettings): Record<LegalPagePath, Legal
           title: 'Demander le retrait d’une photo',
           paragraphs: [
             `Vous vous reconnaissez, ou vous reconnaissez votre enfant, sur une photo et vous ne souhaitez pas qu’elle soit diffusée ? Écrivez à ${site.email} ou envoyez un message à ${site.instagramHandle}, en indiquant l’adresse de la page ou une capture de la photo.`,
-            'La demande est gratuite et n’a pas à être justifiée. La photo est retirée du site et d’Instagram dans les meilleurs délais — en pratique sous 72 heures, et au plus tard dans le délai d’un mois prévu par l’article 12 du RGPD. Les demandes concernant des mineurs sont traitées en priorité.',
+            'La demande est gratuite et n’a pas à être justifiée. La photo est retirée du site et d’Instagram dans les meilleurs délais - en pratique sous 72 heures, et au plus tard dans le délai d’un mois prévu par l’article 12 du RGPD. Les demandes concernant des mineurs sont traitées en priorité.',
             'Le retrait est aussi signalé au club concerné, afin qu’il retire la photo de ses propres supports.',
           ],
         },
         {
           title: 'Pour les clubs',
           paragraphs: [
-            'Le club qui commande une prestation doit informer ses licenciés de la présence du photographe et disposer des autorisations de droit à l’image nécessaires aux usages qu’il fait des photos — notamment une autorisation écrite des représentants légaux pour les joueurs mineurs, souvent recueillie avec la licence ou en début de saison.',
+            'Le club qui commande une prestation doit informer ses licenciés de la présence du photographe et disposer des autorisations de droit à l’image nécessaires aux usages qu’il fait des photos - notamment une autorisation écrite des représentants légaux pour les joueurs mineurs, souvent recueillie avec la licence ou en début de saison.',
             'Il est recommandé de signaler au photographe, avant le match, les joueurs qui ne doivent pas apparaître sur les photos diffusées.',
           ],
           links: [link('Conditions générales de vente', page(LEGAL_PAGE_PATHS.conditionsGenerales))],

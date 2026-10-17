@@ -18,7 +18,7 @@ export class ContentService {
     .slice()
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 
-  /** Every "inBook" photo across all reportages, most recent reportage first — the single source of truth for /galerie. */
+  /** Every "inBook" photo across all reportages, most recent reportage first - the single source of truth for /galerie. */
   readonly bookPhotos: BookPhoto[] = this.reportages.flatMap((reportage) =>
     reportage.photos
       .filter((photo) => photo.inBook)

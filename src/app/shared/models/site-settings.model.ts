@@ -40,7 +40,6 @@ export interface SiteSettings {
   tagline: string;
   photographerFirstName: string;
   email: string;
-  phone: string;
   city: string;
   radiusKm: number;
   instagramHandle: string;

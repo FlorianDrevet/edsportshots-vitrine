@@ -2,8 +2,7 @@
   "name": "EDSPORTSHOTS",
   "tagline": "Photographe de foot · Loire 42",
   "photographerFirstName": "Evan",
-  "email": "contact@edsportshots.fr",
-  "phone": "06 00 00 00 00",
+  "email": "edsportshots@gmail.com",
   "city": "[TA VILLE]",
   "radiusKm": 30,
   "instagramHandle": "@ed_sportshots",
@@ -15,10 +14,10 @@
   "legal": {
     "siteUrl": "https://www.edsportshots.com",
     "ownerFullName": "Evan Drevet",
-    "legalStatus": "[STATUT — ex. Entrepreneur individuel (EI), régime micro-entrepreneur]",
-    "siret": "[NUMÉRO SIRET — 14 chiffres]",
+    "legalStatus": "[STATUT - ex. Entrepreneur individuel (EI), régime micro-entrepreneur]",
+    "siret": "[NUMÉRO SIRET - 14 chiffres]",
     "registration": "Immatriculé au Registre national des entreprises (RNE)",
-    "postalAddress": "[ADRESSE POSTALE PROFESSIONNELLE — ou adresse de domiciliation]",
+    "postalAddress": "[ADRESSE POSTALE PROFESSIONNELLE - ou adresse de domiciliation]",
     "vatStatement": "TVA non applicable, article 293 B du Code général des impôts",
     "publicationDirector": "Evan Drevet",
     "mediator": {
@@ -27,11 +26,11 @@
       "address": "[ADRESSE DU MÉDIATEUR]"
     },
     "quoteValidityDays": 30,
-    "depositPercent": "[ACOMPTE — ex. 30] %",
-    "deliveryDelay": "[DÉLAI DE LIVRAISON — ex. 7 jours]",
-    "mileageRate": "[TARIF KILOMÉTRIQUE — ex. 0,40 €/km]",
+    "depositPercent": "[ACOMPTE - ex. 30] %",
+    "deliveryDelay": "[DÉLAI DE LIVRAISON - ex. 7 jours]",
+    "mileageRate": "[TARIF KILOMÉTRIQUE - ex. 0,40 €/km]",
     "licenseDurationYears": 10,
-    "emailProvider": "[FOURNISSEUR DE MESSAGERIE — ex. OVHcloud, Google Workspace]",
+    "emailProvider": "[FOURNISSEUR DE MESSAGERIE - ex. OVHcloud, Google Workspace]",
     "lastUpdated": "22 septembre 2026",
     "siteCredit": "Florian Drevet",
     "siteCreditUrl": "https://github.com/FlorianDrevet"
@@ -42,7 +41,7 @@
   },
   "bio": [
     "Je photographie le football amateur dans la Loire, au bord du terrain, du coup d'envoi au coup de sifflet final. Ce que je cherche : le duel au bon moment, la course, le regard juste après l'action.",
-    "[TON PARCOURS EN UNE PHRASE — depuis quand tu shootes, ce qui t'a amené au foot.]"
+    "Grâce à mon expérience de joueur et de coach, je sais à quel moment shooter pour immortaliser les meilleurs moments de ton match !"
   ],
   "stats": [
     {
@@ -50,8 +49,8 @@
       "label": "Matchs couverts"
     },
     {
-      "value": "[N]",
-      "label": "Clubs suivis"
+      "value": "4",
+      "label": "Clubs shootés"
     },
     {
       "value": "Canon EOS R50",
@@ -103,5 +102,5 @@
       "highlight": false
     }
   ],
-  "copyright": "Toutes les images © Evan D. — reproduction interdite sans accord."
+  "copyright": "Toutes les images © Evan D. - reproduction interdite sans accord."
 }

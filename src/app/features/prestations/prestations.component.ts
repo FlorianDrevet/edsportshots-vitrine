@@ -31,7 +31,7 @@ export class PrestationsComponent {
   constructor(readonly content: ContentService) {}
 
   get mailtoHref(): string {
-    const subject = encodeURIComponent('Demande de reportage — EDSPORTSHOTS');
+    const subject = encodeURIComponent('Demande de reportage - EDSPORTSHOTS');
     const body = encodeURIComponent(
       'Bonjour,\n\nVoici les infos pour le match :\n- Club / nom :\n- Date :\n- Lieu :\n- Catégorie :\n- Formule souhaitée :\n\nMerci !',
     );
