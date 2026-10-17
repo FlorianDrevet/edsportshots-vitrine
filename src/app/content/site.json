@@ -37,8 +37,8 @@
     "siteCreditUrl": "https://github.com/FlorianDrevet"
   },
   "heroPhoto": {
-    "src": "images/reportages/u18-d2-chamboeuf-2026-09/04-portrait-joueur.jpg",
-    "alt": "Joueur en maillot vert et orange, la main sur la joue"
+    "src": "images/hero/retournee-n8.jpg",
+    "alt": "Joueur en maillot bleu n°8 réalisant une retournée acrobatique, ballon au-dessus de lui"
   },
   "bio": [
     "Je photographie le football amateur dans la Loire, au bord du terrain, du coup d'envoi au coup de sifflet final. Ce que je cherche : le duel au bon moment, la course, le regard juste après l'action.",
@@ -46,7 +46,7 @@
   ],
   "stats": [
     {
-      "value": "[N]",
+      "value": "2",
       "label": "Matchs couverts"
     },
     {
@@ -54,7 +54,7 @@
       "label": "Clubs suivis"
     },
     {
-      "value": "[BOÎTIER]",
+      "value": "Canon EOS R50",
       "label": "Matériel"
     }
   ],
