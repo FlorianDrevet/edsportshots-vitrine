@@ -59,7 +59,7 @@
         <span class="absolute left-3.5 top-2.5 font-display text-2xl text-accent">{{ pad(i + 1) }}</span>
         <span
           class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg/90 to-transparent px-3.5 pb-3 pt-9 text-xs font-bold uppercase tracking-wider text-text"
-          >{{ photo.tags[0] === 'u18-d1' ? 'U18 D1' : 'U18 D2' }}</span
+          >{{ photo.reportageCategory }}</span
         >
       </a>
     }
@@ -77,13 +77,15 @@
         <img [src]="reportage.cover.src" [alt]="reportage.cover.alt" class="h-[220px] w-full object-cover md:h-[300px]" />
         <div class="flex flex-col gap-2.5 px-6 py-6">
           <span class="text-xs font-bold uppercase tracking-[0.18em] text-accent"
-            >{{ reportage.category }} · {{ reportage.location }}</span
+            >{{ reportage.category }} · {{ reportage.location }} · {{ displayDate(reportage.date) }}</span
           >
           <span class="font-display text-2xl uppercase leading-none text-text md:text-3xl"
             >{{ reportage.clubA }} vs {{ reportage.clubB }}</span
           >
           <div class="flex items-center justify-between pt-1.5">
-            <span class="text-[15px] text-text-muted">{{ reportage.photos.length }} photos</span>
+            <span class="text-[15px] text-text-muted"
+              >{{ reportage.score.a ?? '–' }} - {{ reportage.score.b ?? '–' }} · {{ reportage.photos.length }} photos</span
+            >
             <span class="text-sm font-bold uppercase tracking-wider text-text">Voir le reportage &rarr;</span>
           </div>
         </div>

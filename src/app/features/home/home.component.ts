@@ -16,7 +16,14 @@ export class HomeComponent {
   constructor(readonly content: ContentService) {}
 
   get bookPreview() {
-    return this.content.bookPhotos.slice(0, 4);
+    return this.content.reportages
+      .flatMap((reportage) => {
+        const photo = reportage.photos.find((candidate) => candidate.inBook);
+        return photo
+          ? [{ ...photo, reportageSlug: reportage.slug, reportageCategory: reportage.category }]
+          : [];
+      })
+      .slice(0, 4);
   }
 
   get latestReportages() {
@@ -25,5 +32,13 @@ export class HomeComponent {
 
   pad(n: number): string {
     return String(n).padStart(2, '0');
+  }
+
+  displayDate(isoDate: string): string {
+    return new Date(`${isoDate}T12:00:00`).toLocaleDateString('fr-FR', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    });
   }
 }

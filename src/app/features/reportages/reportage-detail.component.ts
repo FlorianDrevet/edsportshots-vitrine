@@ -16,4 +16,12 @@ export class ReportageDetailComponent {
 
   readonly reportage = computed(() => this.content.findBySlug(this.slug()));
   readonly nextReportage = computed(() => this.content.next(this.slug()));
+
+  displayDate(isoDate: string): string {
+    return new Date(`${isoDate}T12:00:00`).toLocaleDateString('fr-FR', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+  }
 }

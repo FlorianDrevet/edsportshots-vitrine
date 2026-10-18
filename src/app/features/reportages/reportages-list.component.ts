@@ -2,11 +2,6 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ContentService } from '../../shared/services/content.service';
 
-const MONTHS_FR = [
-  'Janv.', 'Févr.', 'Mars', 'Avr.', 'Mai', 'Juin',
-  'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.',
-];
-
 @Component({
   selector: 'app-reportages-list',
   standalone: true,
@@ -17,8 +12,11 @@ const MONTHS_FR = [
 export class ReportagesListComponent {
   constructor(readonly content: ContentService) {}
 
-  monthYear(isoDate: string): string {
-    const date = new Date(isoDate);
-    return `${MONTHS_FR[date.getMonth()]} ${date.getFullYear()}`;
+  displayDate(isoDate: string): string {
+    return new Date(`${isoDate}T12:00:00`).toLocaleDateString('fr-FR', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+    });
   }
 }

@@ -1,14 +1,57 @@
 [
   {
+    "slug": "u18-d1-2026-09",
+    "category": "U18 D1",
+    "location": "Stade de Champvert, Chamboeuf",
+    "date": "2026-09-12",
+    "clubA": "USGC",
+    "clubB": "Comelle Vernay",
+    "score": { "a": 3, "b": 0 },
+    "deliveredCount": 21,
+    "story": "L'USGC reçoit Comelle Vernay au stade de Champvert, à Chamboeuf. Les U18 D1 s'imposent 3-0 dans cette rencontre du 12 septembre.",
+    "cover": {
+      "src": "images/reportages/u18-d1-2026-09/01-cover-tacle.jpg",
+      "alt": "Un joueur en noir tacle devant un joueur en vert",
+      "tags": ["u18-d1", "action"],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/u18-d1-2026-09/01-cover-tacle.jpg",
+        "alt": "Un joueur en noir tacle devant un joueur en vert",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-2026-09/02-touche.jpg",
+        "alt": "Le numéro 12 s'apprête à jouer une touche",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-2026-09/03-numero11-profil.jpg",
+        "alt": "Le numéro 11 de profil, le regard vers le jeu",
+        "tags": ["u18-d1", "portrait"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-2026-09/04-numero11-lutte.jpg",
+        "alt": "Le numéro 11 en vert à la lutte avec un joueur en noir",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      }
+    ]
+  },
+  {
     "slug": "u18-d2-chamboeuf-2026-09",
     "category": "U18 D2",
-    "location": "Chamboeuf (42)",
-    "date": "2026-09-14",
-    "clubA": "[Club A]",
-    "clubB": "[Club B]",
-    "score": { "a": 2, "b": 1 },
-    "deliveredCount": 46,
-    "story": "[DEUX OU TROIS PHRASES SUR CE MATCH - le contexte, ce qui s'est joué, le moment que tu attendais. C'est ce petit texte qui transforme une galerie en reportage : court, direct, écrit comme tu le raconterais.]",
+    "location": "Stade de Champvert, Chamboeuf",
+    "date": "2026-09-12",
+    "clubA": "USGC",
+    "clubB": "Avenir Cote",
+    "score": { "a": 0, "b": 5 },
+    "deliveredCount": 19,
+    "story": "À Champvert, les U18 D2 de l'USGC affrontent Avenir Cote. Le match se termine sur le score de 0-5.",
     "cover": {
       "src": "images/reportages/u18-d2-chamboeuf-2026-09/01-cover-duel.jpg",
       "alt": "Duel entre un joueur en blanc et un joueur en vert, ballon au sol",
@@ -55,44 +98,221 @@
     ]
   },
   {
-    "slug": "u18-d1-2026-09",
-    "category": "U18 D1",
-    "location": "[LIEU]",
-    "date": "2026-09-07",
-    "clubA": "[Club A]",
-    "clubB": "[Club B]",
-    "score": { "a": 3, "b": 0 },
-    "deliveredCount": 28,
-    "story": "[DEUX OU TROIS PHRASES SUR CE MATCH - le contexte, ce qui s'est joué, le moment que tu attendais. C'est ce petit texte qui transforme une galerie en reportage : court, direct, écrit comme tu le raconterais.]",
+    "slug": "senior-d4-asjr-luriecq-2026-09",
+    "category": "Sénior D4",
+    "location": "Stade des Unchats, Saint-Just-Saint-Rambert",
+    "date": "2026-09-20",
+    "clubA": "ASJR",
+    "clubB": "Luriecq",
+    "score": { "a": 4, "b": 1 },
+    "deliveredCount": 84,
+    "story": "L'ASJR s'impose 4-1 face à Luriecq en Sénior D4, au stade des Unchats. Une série de photos de cette rencontre à Saint-Just-Saint-Rambert.",
     "cover": {
-      "src": "images/reportages/u18-d1-2026-09/01-cover-tacle.jpg",
-      "alt": "Un joueur en noir tacle devant un joueur en vert",
+      "src": "images/reportages/senior-d4-asjr-luriecq-2026-09/01-cover-duel.webp",
+      "alt": "Un joueur de l'ASJR en orange et noir dispute le ballon à un adversaire en vert et noir",
+      "tags": ["senior-d4", "action"],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/senior-d4-asjr-luriecq-2026-09/01-cover-duel.webp",
+        "alt": "Un joueur de l'ASJR en orange et noir dispute le ballon à un adversaire en vert et noir",
+        "tags": ["senior-d4", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-asjr-luriecq-2026-09/02-frappe.webp",
+        "alt": "Un joueur de l'ASJR frappe le ballon du pied droit",
+        "tags": ["senior-d4", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-asjr-luriecq-2026-09/03-duel-action.webp",
+        "alt": "Deux joueurs s'engagent dans un duel pour le ballon",
+        "tags": ["senior-d4", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-asjr-luriecq-2026-09/04-course.webp",
+        "alt": "Un joueur en vert et noir court avec le ballon devant un adversaire en orange",
+        "tags": ["senior-d4", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-asjr-luriecq-2026-09/05-portrait-joueur.webp",
+        "alt": "Portrait d'un joueur de l'ASJR en maillot orange et noir",
+        "tags": ["senior-d4", "portrait"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-asjr-luriecq-2026-09/06-action-collective.webp",
+        "alt": "Plusieurs joueurs de l'ASJR et de Luriecq se disputent le ballon",
+        "tags": ["senior-d4", "action"],
+        "inBook": true
+      }
+    ]
+  },
+  {
+    "slug": "senior-r2-asjr-villefontaine-2026-10",
+    "category": "Sénior R2",
+    "location": "Stade des Unchats, Saint-Just-Saint-Rambert",
+    "date": "2026-10-04",
+    "clubA": "ASJR",
+    "clubB": "Villefontaine",
+    "score": { "a": 0, "b": 2 },
+    "deliveredCount": 125,
+    "story": "En Régional 2, l'ASJR reçoit Villefontaine au stade des Unchats. Villefontaine repart avec la victoire sur le score de 0-2.",
+    "cover": {
+      "src": "images/reportages/senior-r2-asjr-villefontaine-2026-10/01-cover-face-a-face.webp",
+      "alt": "Un joueur de Villefontaine en bleu conduit le ballon face à un joueur de l'ASJR en orange",
+      "tags": ["senior-r2", "action"],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/senior-r2-asjr-villefontaine-2026-10/01-cover-face-a-face.webp",
+        "alt": "Un joueur de Villefontaine en bleu conduit le ballon face à un joueur de l'ASJR en orange",
+        "tags": ["senior-r2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-r2-asjr-villefontaine-2026-10/02-action-devant-but.webp",
+        "alt": "Un joueur de l'ASJR attaque devant le but face au gardien de Villefontaine",
+        "tags": ["senior-r2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-r2-asjr-villefontaine-2026-10/03-duel-aerien.webp",
+        "alt": "Des joueurs de l'ASJR et de Villefontaine disputent le ballon de la tête",
+        "tags": ["senior-r2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-r2-asjr-villefontaine-2026-10/04-duel.webp",
+        "alt": "Un joueur de l'ASJR en orange lutte pour le ballon avec un joueur de Villefontaine en bleu",
+        "tags": ["senior-r2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-r2-asjr-villefontaine-2026-10/05-tacle.webp",
+        "alt": "Un joueur de l'ASJR se jette pour récupérer le ballon face à un adversaire",
+        "tags": ["senior-r2", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-r2-asjr-villefontaine-2026-10/06-frappe.webp",
+        "alt": "Un joueur de l'ASJR en orange frappe le ballon",
+        "tags": ["senior-r2", "action"],
+        "inBook": true
+      }
+    ]
+  },
+  {
+    "slug": "u18-d1-usgc-esv-2026-10",
+    "category": "U18 D1",
+    "location": "Stade de Champvert, Chamboeuf",
+    "date": "2026-10-10",
+    "clubA": "USGC",
+    "clubB": "ESV",
+    "score": { "a": 3, "b": 1 },
+    "deliveredCount": 42,
+    "story": "À Chamboeuf, l'USGC gagne 3-1 face à l'ESV en U18 D1. Quelques instants de cette rencontre au stade de Champvert.",
+    "cover": {
+      "src": "images/reportages/u18-d1-usgc-esv-2026-10/01-cover-duel.webp",
+      "alt": "Un joueur de l'USGC en vert et un joueur de l'ESV en jaune se disputent le ballon",
       "tags": ["u18-d1", "action"],
       "inBook": true
     },
     "photos": [
       {
-        "src": "images/reportages/u18-d1-2026-09/01-cover-tacle.jpg",
-        "alt": "Un joueur en noir tacle devant un joueur en vert",
+        "src": "images/reportages/u18-d1-usgc-esv-2026-10/01-cover-duel.webp",
+        "alt": "Un joueur de l'USGC en vert et un joueur de l'ESV en jaune se disputent le ballon",
         "tags": ["u18-d1", "action"],
         "inBook": true
       },
       {
-        "src": "images/reportages/u18-d1-2026-09/02-touche.jpg",
-        "alt": "Le numéro 12 s'apprête à jouer une touche",
-        "tags": ["u18-d1", "action"],
-        "inBook": true
-      },
-      {
-        "src": "images/reportages/u18-d1-2026-09/03-numero11-profil.jpg",
-        "alt": "Le numéro 11 de profil, le regard vers le jeu",
+        "src": "images/reportages/u18-d1-usgc-esv-2026-10/02-portrait-joueur.webp",
+        "alt": "Portrait d'un joueur de l'USGC en maillot vert et orange sur la pelouse",
         "tags": ["u18-d1", "portrait"],
         "inBook": true
       },
       {
-        "src": "images/reportages/u18-d1-2026-09/04-numero11-lutte.jpg",
-        "alt": "Le numéro 11 en vert à la lutte avec un joueur en noir",
+        "src": "images/reportages/u18-d1-usgc-esv-2026-10/03-duel.webp",
+        "alt": "Un joueur de l'USGC en vert accélère devant un adversaire en jaune",
         "tags": ["u18-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-usgc-esv-2026-10/04-conduite-ballon.webp",
+        "alt": "Un joueur de l'ESV en jaune garde le ballon au pied sous la pression d'un défenseur",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-usgc-esv-2026-10/05-arret-gardien.webp",
+        "alt": "Un gardien en orange se détend près de sa ligne pour intercepter le ballon",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/u18-d1-usgc-esv-2026-10/06-celebration.webp",
+        "alt": "Deux joueurs de l'USGC se retrouvent pour célébrer une action",
+        "tags": ["u18-d1", "action"],
+        "inBook": true
+      }
+    ]
+  },
+  {
+    "slug": "coupe-de-france-5e-tour-forez-roannais-le-puy-2026-10",
+    "category": "Coupe de France · 5e tour",
+    "location": "Stade Maurice-Rousson, Feurs",
+    "date": "2026-10-11",
+    "clubA": "Forez Roannais",
+    "clubB": "Le Puy en Velay FC",
+    "score": { "a": 0, "b": 8 },
+    "deliveredCount": 78,
+    "story": "Au stade Maurice-Rousson de Feurs, Forez Roannais et Le Puy en Velay FC se retrouvent pour le 5e tour de Coupe de France. Le Puy s'impose 0-8.",
+    "cover": {
+      "src": "images/reportages/coupe-de-france-5e-tour-forez-roannais-le-puy-2026-10/01-cover-action.webp",
+      "alt": "Un joueur du Puy en bleu conduit le ballon face à un adversaire en blanc et rouge",
+      "tags": ["coupe-de-france", "action"],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/coupe-de-france-5e-tour-forez-roannais-le-puy-2026-10/01-cover-action.webp",
+        "alt": "Un joueur du Puy en bleu conduit le ballon face à un adversaire en blanc et rouge",
+        "tags": ["coupe-de-france", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-5e-tour-forez-roannais-le-puy-2026-10/02-tacle.webp",
+        "alt": "Un joueur du Puy se jette pour récupérer le ballon face à un joueur de Forez Roannais",
+        "tags": ["coupe-de-france", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-5e-tour-forez-roannais-le-puy-2026-10/03-duel.webp",
+        "alt": "Un joueur du Puy en bleu et un joueur de Forez Roannais en blanc et rouge se disputent le ballon",
+        "tags": ["coupe-de-france", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-5e-tour-forez-roannais-le-puy-2026-10/04-duel-aerien.webp",
+        "alt": "Un joueur du Puy et un adversaire disputent un ballon aérien",
+        "tags": ["coupe-de-france", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-5e-tour-forez-roannais-le-puy-2026-10/05-duel-aerien.webp",
+        "alt": "Plusieurs joueurs des deux équipes se pressent sous un ballon aérien",
+        "tags": ["coupe-de-france", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-5e-tour-forez-roannais-le-puy-2026-10/06-gardien.webp",
+        "alt": "Le gardien du Puy en noir se tient près de son but pendant le jeu",
+        "tags": ["coupe-de-france", "action"],
         "inBook": true
       }
     ]

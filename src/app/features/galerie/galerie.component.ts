@@ -15,10 +15,7 @@ interface Chip {
   styleUrl: './galerie.component.scss',
 })
 export class GalerieComponent {
-  private readonly chipDefs: Chip[] = [
-    { id: 'all', label: 'Tout' },
-    { id: 'u18-d1', label: 'U18 D1' },
-    { id: 'u18-d2', label: 'U18 D2' },
+  private readonly typeChips: Chip[] = [
     { id: 'action', label: 'Action' },
     { id: 'portrait', label: 'Portraits' },
   ];
@@ -39,7 +36,20 @@ export class GalerieComponent {
   }
 
   get chips() {
-    return this.chipDefs.map((chip) => ({ ...chip, count: this.count(chip.id) }));
+    const categories = new Map<string, string>();
+    for (const photo of this.content.bookPhotos) {
+      const categoryId = photo.tags[0];
+      if (categoryId && !categories.has(categoryId)) {
+        categories.set(categoryId, photo.reportageCategory);
+      }
+    }
+
+    const definitions = [
+      { id: 'all', label: 'Tout' },
+      ...Array.from(categories, ([id, label]) => ({ id, label })),
+      ...this.typeChips,
+    ];
+    return definitions.map((chip) => ({ ...chip, count: this.count(chip.id) }));
   }
 
   pad(n: number): string {

@@ -7,6 +7,7 @@ import { Photo } from '../models/photo.model';
 
 export interface BookPhoto extends Photo {
   reportageSlug: string;
+  reportageCategory: string;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -22,7 +23,7 @@ export class ContentService {
   readonly bookPhotos: BookPhoto[] = this.reportages.flatMap((reportage) =>
     reportage.photos
       .filter((photo) => photo.inBook)
-      .map((photo) => ({ ...photo, reportageSlug: reportage.slug })),
+      .map((photo) => ({ ...photo, reportageSlug: reportage.slug, reportageCategory: reportage.category })),
   );
 
   findBySlug(slug: string): Reportage | undefined {

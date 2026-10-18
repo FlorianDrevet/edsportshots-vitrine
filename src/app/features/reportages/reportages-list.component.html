@@ -19,13 +19,15 @@
       />
       <div class="flex flex-1 flex-col justify-center gap-3 px-6 py-6 sm:px-9">
         <span class="text-xs font-bold uppercase tracking-[0.18em] text-accent"
-          >{{ reportage.category }} · {{ reportage.location }} · {{ monthYear(reportage.date) }}</span
+          >{{ reportage.category }} · {{ reportage.location }} · {{ displayDate(reportage.date) }}</span
         >
         <span class="font-display text-3xl uppercase leading-none tracking-tight text-text md:text-4xl"
           >{{ reportage.clubA }} vs {{ reportage.clubB }}</span
         >
         <div class="flex items-center justify-between pt-1.5">
-          <span class="text-[15px] text-text-muted">{{ reportage.photos.length }} photos</span>
+          <span class="text-[15px] text-text-muted"
+            >{{ reportage.score.a ?? '–' }} - {{ reportage.score.b ?? '–' }} · {{ reportage.photos.length }} photos</span
+          >
           <span class="text-sm font-bold uppercase tracking-wider text-text">Voir le reportage &rarr;</span>
         </div>
       </div>
