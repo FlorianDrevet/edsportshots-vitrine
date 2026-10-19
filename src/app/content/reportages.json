@@ -1,5 +1,60 @@
 [
   {
+    "slug": "senior-d1-ascm-villars-2026-10",
+    "category": "Sénior D1",
+    "location": "Stade Municipal, Chambéon",
+    "date": "2026-10-18",
+    "clubA": "ASCM",
+    "clubB": "US Villars",
+    "score": { "a": 1, "b": 1 },
+    "deliveredCount": 98,
+    "story": "Au Stade Municipal de Chambéon, l'ASCM et l'US Villars se neutralisent en Sénior D1 (1-1). Une sélection d'images de cette rencontre du 18 octobre 2026.",
+    "cover": {
+      "src": "images/reportages/senior-d1-ascm-villars-2026-10/03-frappe.webp",
+      "alt": "Un joueur de l'US Villars en rouge frappe le ballon face à un joueur de l'ASCM en noir",
+      "tags": ["senior-d1", "action"],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/senior-d1-ascm-villars-2026-10/01-duel-course.webp",
+        "alt": "Un joueur de l'ASCM en noir et un joueur de l'US Villars en rouge se disputent le ballon en pleine course",
+        "tags": ["senior-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d1-ascm-villars-2026-10/02-conduite-ballon.webp",
+        "alt": "Un joueur de l'ASCM en noir contrôle le ballon sous la pression d'un adversaire en rouge",
+        "tags": ["senior-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d1-ascm-villars-2026-10/03-frappe.webp",
+        "alt": "Un joueur de l'US Villars en rouge s'apprête à frapper le ballon face à un joueur de l'ASCM",
+        "tags": ["senior-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d1-ascm-villars-2026-10/04-tacle.webp",
+        "alt": "Un joueur de l'US Villars garde le ballon alors qu'un joueur de l'ASCM se jette au sol",
+        "tags": ["senior-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d1-ascm-villars-2026-10/05-duel-aerien.webp",
+        "alt": "Un joueur de l'US Villars en rouge et un joueur de l'ASCM en noir sautent pour jouer le ballon aérien",
+        "tags": ["senior-d1", "action"],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d1-ascm-villars-2026-10/06-course-ballon.webp",
+        "alt": "Un joueur en noir et un joueur en rouge courent après le ballon près de la ligne de touche",
+        "tags": ["senior-d1", "action"],
+        "inBook": true
+      }
+    ]
+  },
+  {
     "slug": "u18-d1-2026-09",
     "category": "U18 D1",
     "location": "Stade de Champvert, Chamboeuf",
