@@ -1,4 +1,4 @@
-import { Component, computed, input, signal } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren, computed, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ContentService } from '../../shared/services/content.service';
 
@@ -13,6 +13,9 @@ export class ReportageDetailComponent {
   readonly slug = input.required<string>();
   readonly activePhotoIndex = signal<number | null>(null);
 
+  @ViewChildren('galleryPhoto', { read: ElementRef })
+  private galleryPhotos!: QueryList<ElementRef<HTMLButtonElement>>;
+
   constructor(readonly content: ContentService) {}
 
   readonly reportage = computed(() => this.content.findBySlug(this.slug()));
@@ -24,7 +27,14 @@ export class ReportageDetailComponent {
 
   private photoTrigger: HTMLButtonElement | null = null;
   private pointerStart: { x: number; y: number } | null = null;
-  private previousOverflow: { html: string; body: string } | null = null;
+  private previousOverflow: {
+    html: string;
+    body: string;
+    bodyPosition: string;
+    bodyTop: string;
+    bodyWidth: string;
+    scrollY: number;
+  } | null = null;
 
   displayDate(isoDate: string): string {
     return new Date(`${isoDate}T12:00:00`).toLocaleDateString('fr-FR', {
@@ -39,12 +49,20 @@ export class ReportageDetailComponent {
 
     this.photoTrigger = trigger;
     this.activePhotoIndex.set(index);
+    const scrollY = window.scrollY;
     this.previousOverflow = {
       html: document.documentElement.style.overflow,
       body: document.body.style.overflow,
+      bodyPosition: document.body.style.position,
+      bodyTop: document.body.style.top,
+      bodyWidth: document.body.style.width,
+      scrollY,
     };
     document.documentElement.style.overflow = 'hidden';
     document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
     dialog.showModal();
     requestAnimationFrame(() => {
       if (dialog.open) dialog.querySelector<HTMLButtonElement>('[autofocus]')?.focus({ preventScroll: true });
@@ -59,15 +77,24 @@ export class ReportageDetailComponent {
     this.activePhotoIndex.set(null);
     this.pointerStart = null;
 
-    if (this.previousOverflow) {
-      document.documentElement.style.overflow = this.previousOverflow.html;
-      document.body.style.overflow = this.previousOverflow.body;
+    const previousPageState = this.previousOverflow;
+    if (previousPageState) {
+      document.documentElement.style.overflow = previousPageState.html;
+      document.body.style.overflow = previousPageState.body;
+      document.body.style.position = previousPageState.bodyPosition;
+      document.body.style.top = previousPageState.bodyTop;
+      document.body.style.width = previousPageState.bodyWidth;
       this.previousOverflow = null;
+      window.scrollTo(0, previousPageState.scrollY);
     }
 
     const trigger = this.photoTrigger;
     this.photoTrigger = null;
-    requestAnimationFrame(() => trigger?.focus({ preventScroll: true }));
+    requestAnimationFrame(() => {
+      if (!trigger) return;
+      trigger.focus({ preventScroll: true });
+      trigger.scrollIntoView({ block: 'center', inline: 'nearest' });
+    });
   }
 
   onPhotoDialogClick(event: MouseEvent, dialog: HTMLDialogElement): void {
@@ -122,6 +149,8 @@ export class ReportageDetailComponent {
     const index = this.activePhotoIndex();
     if (!photoCount || index === null) return;
 
-    this.activePhotoIndex.set((index + direction + photoCount) % photoCount);
+    const nextIndex = (index + direction + photoCount) % photoCount;
+    this.activePhotoIndex.set(nextIndex);
+    this.photoTrigger = this.galleryPhotos.get(nextIndex)?.nativeElement ?? this.photoTrigger;
   }
 }
