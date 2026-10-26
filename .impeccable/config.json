@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "src/app/features/reportages/reportage-detail.component.html"
+        ],
+        "createdAt": "2026-10-26T19:20:12.304Z",
+        "reason": "Angular [src] bindings use reportage JSON; all 474 configured photo paths were checked and exist."
+      },
+      {
+        "rule": "overused-font",
+        "value": "space grotesk",
+        "files": [
+          "src/app/features/reportages/reportage-detail.component.scss"
+        ],
+        "createdAt": "2026-10-26T19:20:12.584Z",
+        "reason": "Space Grotesk is the site's established body font; this refinement preserves the current design system."
+      }
+    ]
+  }
+}

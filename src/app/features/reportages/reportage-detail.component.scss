@@ -1,0 +1,252 @@
+.reportage-facts {
+  grid-template-areas:
+    'score category'
+    'delivered category'
+    'location location';
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 12px 20px;
+  padding: 20px;
+}
+
+.fact {
+  min-width: 0;
+}
+
+.fact--score {
+  grid-area: score;
+}
+
+.fact--category {
+  grid-area: category;
+  align-self: center;
+}
+
+.fact--location {
+  grid-area: location;
+}
+
+.fact--delivered {
+  grid-area: delivered;
+}
+
+.fact-value {
+  display: block;
+  font-variant-numeric: tabular-nums;
+}
+
+.fact-value--score,
+.fact-value--delivered {
+  font-family: 'Archivo Black', Impact, sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.05;
+}
+
+.fact-value--detail {
+  font-family: 'Space Grotesk', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: clamp(1rem, 4.4vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.22;
+  overflow-wrap: anywhere;
+}
+
+.photo-tile {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.photo-tile__hint {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  color: #f4f4f2;
+  background: rgb(14 15 16 / 88%);
+}
+
+.photo-viewer:not([open]) {
+  display: none;
+}
+
+.photo-viewer[open] {
+  display: block;
+}
+
+.photo-viewer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  color: #f4f4f2;
+  background: #0e0f10;
+}
+
+.photo-viewer::backdrop {
+  background: #0e0f10;
+}
+
+.photo-viewer__layout {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  padding:
+    max(12px, env(safe-area-inset-top, 0px))
+    max(16px, env(safe-area-inset-right, 0px))
+    max(16px, env(safe-area-inset-bottom, 0px))
+    max(16px, env(safe-area-inset-left, 0px));
+}
+
+.photo-viewer__topbar,
+.photo-viewer__toolbar {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.photo-viewer__topbar {
+  min-height: 48px;
+}
+
+.photo-viewer__counter {
+  color: #b7babb;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
+}
+
+.photo-viewer__icon-button,
+.photo-viewer__side-button {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #33373a;
+  color: #f4f4f2;
+  background: #16181a;
+  cursor: pointer;
+}
+
+.photo-viewer__icon-button:hover,
+.photo-viewer__side-button:hover {
+  border-color: #d8ff3e;
+  color: #d8ff3e;
+}
+
+.photo-viewer__icon-button:focus-visible,
+.photo-viewer__side-button:focus-visible,
+.photo-viewer__download:focus-visible {
+  outline: 2px solid #d8ff3e;
+  outline-offset: 3px;
+}
+
+.photo-viewer__stage {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 10px -4px 12px;
+  touch-action: pan-y pinch-zoom;
+}
+
+.photo-viewer__image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.photo-viewer__side-button {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  display: none;
+  border-color: #33373a;
+  transform: translateY(-50%);
+}
+
+.photo-viewer__side-button--previous {
+  left: 16px;
+}
+
+.photo-viewer__side-button--next {
+  right: 16px;
+}
+
+.photo-viewer__mobile-stepper {
+  display: flex;
+  gap: 8px;
+}
+
+.photo-viewer__download {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 16px;
+  color: #1e2a06;
+  background: #d8ff3e;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.photo-viewer__download:hover {
+  color: #1e2a06;
+  background: #e3ff76;
+}
+
+@media (min-width: 768px) {
+  .reportage-facts {
+    grid-template-areas: 'score category location delivered';
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px;
+    padding: 32px 56px;
+  }
+
+  .fact--category {
+    align-self: start;
+  }
+
+  .fact-value--score,
+  .fact-value--delivered {
+    font-size: 2rem;
+  }
+
+  .fact-value--detail {
+    font-family: 'Archivo Black', Impact, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.18;
+  }
+
+  .photo-viewer__mobile-stepper {
+    display: none;
+  }
+
+  .photo-viewer__side-button {
+    display: inline-flex;
+  }
+}

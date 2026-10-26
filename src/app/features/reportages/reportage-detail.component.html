@@ -1,5 +1,5 @@
 @if (reportage(); as reportage) {
-  <section class="mx-auto flex max-w-[1440px] flex-col gap-8 px-5 pt-8 md:flex-row md:px-14 md:pt-12">
+  <section class="mx-auto flex max-w-[1440px] flex-col gap-6 px-5 pt-6 md:flex-row md:gap-8 md:px-14 md:pt-12">
     <div class="flex flex-col justify-between gap-6 md:w-[42%] md:shrink-0">
       <div class="flex flex-col gap-5">
         <a routerLink="/reportages" class="text-xs font-bold uppercase tracking-[0.18em] text-text-dim">&larr; Tous les reportages</a>
@@ -9,56 +9,166 @@
             >{{ reportage.category }} · {{ displayDate(reportage.date) }}</span
           >
         </div>
-        <h1 class="font-display text-5xl uppercase leading-[0.88] tracking-tight md:text-7xl">
+        <h1 class="font-display text-[clamp(2.25rem,10vw,3rem)] uppercase leading-[0.9] tracking-tight sm:text-5xl md:text-7xl">
           {{ reportage.clubA }}<br /><span class="text-accent">vs</span><br />{{ reportage.clubB }}
         </h1>
       </div>
       <a
         routerLink="/prestations"
         fragment="contact"
-        class="self-start bg-accent px-7 py-4 text-sm font-bold uppercase tracking-wider text-bg"
+        class="w-full self-start bg-accent px-5 py-4 text-center text-sm font-bold uppercase tracking-wider text-bg sm:w-auto sm:px-7"
         >Commander un match comme celui-ci</a
       >
     </div>
-    <div class="relative min-h-[280px] flex-1 overflow-hidden bg-surface md:min-h-[400px]">
+    <div class="relative min-h-[240px] flex-1 overflow-hidden bg-surface sm:min-h-[320px] md:min-h-[400px]">
       <img [src]="reportage.cover.src" [alt]="reportage.cover.alt" class="absolute inset-0 h-full w-full object-cover" />
-      <span class="absolute bottom-11 right-[-40px] rotate-[-4deg] bg-accent px-14 py-3 font-display text-sm uppercase tracking-wide text-bg"
+      <span class="absolute bottom-5 right-3 rotate-[-4deg] bg-accent px-4 py-3 font-display text-sm uppercase tracking-wide text-bg sm:right-5 sm:px-7"
         >{{ reportage.photos.length }} photos</span
       >
     </div>
   </section>
 
-  <div class="mx-auto mt-10 grid max-w-[1440px] grid-cols-2 gap-y-4 bg-accent px-5 py-6 text-accent-ink sm:grid-cols-4 md:px-14">
-    <div class="flex flex-col gap-0.5">
-      <span class="text-[11px] font-bold uppercase tracking-[0.2em]">Score</span>
-      <span class="font-display text-2xl">{{ reportage.score.a ?? '-' }} - {{ reportage.score.b ?? '-' }}</span>
+  <section class="reportage-facts mx-auto mt-6 grid max-w-[1440px] bg-accent text-accent-ink md:mt-10" aria-label="Informations sur le match">
+    <div class="fact fact--score">
+      <span class="mb-1 block text-[10px] font-bold uppercase tracking-[0.2em] sm:text-[11px]">Score</span>
+      <span class="fact-value fact-value--score">{{ reportage.score.a ?? '–' }} - {{ reportage.score.b ?? '–' }}</span>
     </div>
-    <div class="flex flex-col gap-0.5">
-      <span class="text-[11px] font-bold uppercase tracking-[0.2em]">Catégorie</span>
-      <span class="font-display text-2xl">{{ reportage.category }}</span>
+    <div class="fact fact--category">
+      <span class="mb-1 block text-[10px] font-bold uppercase tracking-[0.2em] sm:text-[11px]">Catégorie</span>
+      <span class="fact-value fact-value--detail">{{ reportage.category }}</span>
     </div>
-    <div class="flex flex-col gap-0.5">
-      <span class="text-[11px] font-bold uppercase tracking-[0.2em]">Lieu</span>
-      <span class="font-display text-2xl">{{ reportage.location }}</span>
+    <div class="fact fact--location">
+      <span class="mb-1 block text-[10px] font-bold uppercase tracking-[0.2em] sm:text-[11px]">Lieu</span>
+      <span class="fact-value fact-value--detail">{{ reportage.location }}</span>
     </div>
-    <div class="flex flex-col gap-0.5">
-      <span class="text-[11px] font-bold uppercase tracking-[0.2em]">Photos livrées</span>
-      <span class="font-display text-2xl">{{ reportage.deliveredCount }}</span>
+    <div class="fact fact--delivered">
+      <span class="mb-1 block text-[10px] font-bold uppercase tracking-[0.2em] sm:text-[11px]">Photos livrées</span>
+      <span class="fact-value fact-value--delivered">{{ reportage.deliveredCount }}</span>
     </div>
-  </div>
+  </section>
 
-  <section class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 py-12 md:flex-row md:gap-14 md:px-14">
+  <section class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 py-10 md:flex-row md:gap-14 md:px-14 md:py-12">
     <span class="w-[150px] shrink-0 pt-1 text-xs font-bold uppercase tracking-[0.26em] text-accent">Le match</span>
-    <p class="max-w-[880px] text-xl leading-relaxed text-text-muted">{{ reportage.story }}</p>
+    <p class="max-w-[880px] text-lg leading-relaxed text-text-muted sm:text-xl">{{ reportage.story }}</p>
   </section>
 
-  <section class="mx-auto grid max-w-[1440px] grid-cols-2 gap-3 px-5 pb-4 sm:grid-cols-3 md:px-14">
-    @for (photo of reportage.photos; track photo.src) {
-      <img [src]="photo.src" [alt]="photo.alt" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover" />
+  <section class="mx-auto max-w-[1440px] px-5 pb-4 md:px-14" aria-label="Galerie du reportage">
+    <div class="mb-5 flex items-end justify-between gap-4">
+      <h2 class="font-display text-3xl uppercase leading-none tracking-tight sm:text-4xl">Les photos</h2>
+      <span class="pb-0.5 text-xs font-bold uppercase tracking-[0.18em] text-text-dim">{{ reportage.photos.length }} images</span>
+    </div>
+    <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-3 lg:grid-cols-4">
+      @for (photo of reportage.photos; track photo.src; let i = $index) {
+        <button
+          #galleryPhoto
+          type="button"
+          (click)="openPhoto(i, photoDialog, galleryPhoto)"
+          [attr.aria-label]="'Ouvrir la photo ' + (i + 1) + ' : ' + photo.alt"
+          aria-haspopup="dialog"
+          class="photo-tile group relative block w-full overflow-hidden bg-surface text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+        >
+          <img [src]="photo.src" [alt]="photo.alt" loading="lazy" decoding="async" class="aspect-[3/4] w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.035] motion-reduce:transition-none" />
+          <span class="photo-tile__hint" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M8 4H4v4M16 4h4v4M20 16v4h-4M4 16v4h4M4 8l6-6M20 8l-6-6M4 16l6 6M20 16l-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </button>
+      }
+    </div>
+  </section>
+
+  <dialog
+    #photoDialog
+    class="photo-viewer"
+    aria-label="Visionneuse de photos"
+    (click)="onPhotoDialogClick($event, photoDialog)"
+    (close)="onPhotoDialogClosed()"
+    (keydown)="onPhotoDialogKeydown($event)"
+  >
+    @if (activePhoto(); as photo) {
+      <div class="photo-viewer__layout">
+        <header class="photo-viewer__topbar">
+          <span class="photo-viewer__counter" aria-live="polite">
+            Photo {{ (activePhotoIndex() ?? 0) + 1 }} / {{ reportage.photos.length }}
+          </span>
+          <button
+            type="button"
+            autofocus
+            (click)="closePhoto(photoDialog)"
+            aria-label="Fermer la photo"
+            class="photo-viewer__icon-button"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </button>
+        </header>
+
+        <div
+          class="photo-viewer__stage"
+          (pointerdown)="onPhotoPointerDown($event)"
+          (pointerup)="onPhotoPointerUp($event)"
+          (pointercancel)="onPhotoPointerCancel()"
+        >
+          <button
+            type="button"
+            (click)="navigatePhoto(-1)"
+            aria-label="Photo précédente"
+            class="photo-viewer__side-button photo-viewer__side-button--previous"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <img [src]="photo.src" [alt]="photo.alt" decoding="async" class="photo-viewer__image" />
+          <button
+            type="button"
+            (click)="navigatePhoto(1)"
+            aria-label="Photo suivante"
+            class="photo-viewer__side-button photo-viewer__side-button--next"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <footer class="photo-viewer__toolbar">
+          <div class="photo-viewer__mobile-stepper">
+            <button
+              type="button"
+              (click)="navigatePhoto(-1)"
+              aria-label="Photo précédente"
+              class="photo-viewer__icon-button"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m15 18-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              (click)="navigatePhoto(1)"
+              aria-label="Photo suivante"
+              class="photo-viewer__icon-button"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <a [href]="photo.src" [attr.download]="downloadName(photo.src)" class="photo-viewer__download">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3h16v-3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span>Télécharger</span>
+          </a>
+        </footer>
+      </div>
     }
-  </section>
+  </dialog>
 
-  <section class="mx-auto flex max-w-[1440px] flex-col items-center justify-between gap-3 px-5 py-6 sm:flex-row md:px-14">
+  <section class="mx-auto flex max-w-[1440px] flex-col items-start justify-between gap-3 px-5 py-6 sm:flex-row sm:items-center md:px-14">
     <span class="text-[15px] text-text-dim">Retrouvez aussi EDSPORTSHOTS sur Instagram.</span>
     <a [href]="content.site.instagramUrl" class="text-sm font-bold uppercase tracking-wider text-accent"
       >Voir le compte {{ content.site.instagramHandle }} &rarr;</a
@@ -68,9 +178,9 @@
   @if (nextReportage(); as next) {
     <section class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 py-12 md:px-14">
       <span class="text-xs font-bold uppercase tracking-[0.24em] text-text-dim">Reportage suivant</span>
-      <a [routerLink]="['/reportages', next.slug]" class="flex flex-col bg-surface sm:flex-row sm:h-[260px]">
+      <a [routerLink]="['/reportages', next.slug]" class="flex flex-col bg-surface sm:h-[260px] sm:flex-row">
         <img [src]="next.cover.src" [alt]="next.cover.alt" loading="lazy" decoding="async" class="h-[200px] w-full object-cover sm:h-full sm:w-[460px] sm:shrink-0" />
-        <div class="flex flex-1 flex-col justify-between gap-4 px-8 py-8">
+        <div class="flex flex-1 flex-col justify-between gap-4 px-6 py-6 sm:px-8 sm:py-8">
           <div class="flex flex-col gap-3">
             <span class="text-xs font-bold uppercase tracking-[0.18em] text-accent">{{ next.category }} · {{ next.location }}</span>
             <span class="font-display text-3xl uppercase leading-[0.95] tracking-tight md:text-4xl"
