@@ -1,5 +1,1279 @@
 [
   {
+    "slug": "senior-d4-usgc-asjr-2026-10",
+    "category": "Sénior D4",
+    "location": "Stade Benoît Rollès, Saint-Galmier",
+    "date": "2026-10-25",
+    "clubA": "USGC",
+    "clubB": "ASJR",
+    "score": {
+      "a": 1,
+      "b": 0
+    },
+    "deliveredCount": 62,
+    "story": "Au stade Benoît Rollès de Saint-Galmier, l’USGC s’impose 1-0 face à l’ASJR en Sénior D4.",
+    "cover": {
+      "src": "images/reportages/senior-d4-usgc-asjr-2026-10/01-cover-duel.webp",
+      "alt": "Des joueurs en vert et orange se disputent le ballon lors du match USGC - ASJR.",
+      "tags": [
+        "senior-d4",
+        "action"
+      ],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/001.webp",
+        "alt": "Photo 1 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/002.webp",
+        "alt": "Photo 2 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/003.webp",
+        "alt": "Photo 3 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/004.webp",
+        "alt": "Photo 4 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/005.webp",
+        "alt": "Photo 5 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/006.webp",
+        "alt": "Photo 6 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/007.webp",
+        "alt": "Photo 7 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/008.webp",
+        "alt": "Photo 8 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/009.webp",
+        "alt": "Photo 9 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/010.webp",
+        "alt": "Photo 10 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/011.webp",
+        "alt": "Photo 11 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/012.webp",
+        "alt": "Photo 12 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/013.webp",
+        "alt": "Photo 13 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/014.webp",
+        "alt": "Photo 14 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/015.webp",
+        "alt": "Photo 15 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/016.webp",
+        "alt": "Photo 16 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/017.webp",
+        "alt": "Photo 17 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/018.webp",
+        "alt": "Photo 18 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/019.webp",
+        "alt": "Photo 19 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/020.webp",
+        "alt": "Photo 20 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/021.webp",
+        "alt": "Photo 21 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/022.webp",
+        "alt": "Photo 22 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/023.webp",
+        "alt": "Photo 23 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/024.webp",
+        "alt": "Photo 24 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/025.webp",
+        "alt": "Photo 25 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/026.webp",
+        "alt": "Photo 26 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/027.webp",
+        "alt": "Photo 27 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/028.webp",
+        "alt": "Photo 28 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/029.webp",
+        "alt": "Photo 29 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/030.webp",
+        "alt": "Photo 30 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/031.webp",
+        "alt": "Photo 31 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/032.webp",
+        "alt": "Photo 32 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/033.webp",
+        "alt": "Photo 33 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/034.webp",
+        "alt": "Photo 34 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/035.webp",
+        "alt": "Photo 35 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/036.webp",
+        "alt": "Photo 36 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/037.webp",
+        "alt": "Photo 37 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/038.webp",
+        "alt": "Photo 38 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/039.webp",
+        "alt": "Photo 39 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/040.webp",
+        "alt": "Photo 40 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/041.webp",
+        "alt": "Photo 41 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/042.webp",
+        "alt": "Photo 42 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/043.webp",
+        "alt": "Photo 43 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/044.webp",
+        "alt": "Photo 44 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/045.webp",
+        "alt": "Photo 45 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/046.webp",
+        "alt": "Photo 46 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/047.webp",
+        "alt": "Photo 47 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/048.webp",
+        "alt": "Photo 48 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/049.webp",
+        "alt": "Photo 49 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/050.webp",
+        "alt": "Photo 50 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/051.webp",
+        "alt": "Photo 51 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/052.webp",
+        "alt": "Photo 52 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/053.webp",
+        "alt": "Photo 53 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/054.webp",
+        "alt": "Photo 54 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/055.webp",
+        "alt": "Photo 55 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/056.webp",
+        "alt": "Photo 56 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/057.webp",
+        "alt": "Photo 57 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/058.webp",
+        "alt": "Photo 58 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/059.webp",
+        "alt": "Photo 59 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/060.webp",
+        "alt": "Photo 60 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/061.webp",
+        "alt": "Photo 61 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/senior-d4-usgc-asjr-2026-10/full/062.webp",
+        "alt": "Photo 62 sur 62 du match USGC 1-0 ASJR (Sénior D4), au Stade Benoît Rollès, Saint-Galmier, le 25/10/2026.",
+        "tags": [
+          "senior-d4",
+          "action"
+        ],
+        "inBook": true
+      }
+    ]
+  },
+  {
+    "slug": "coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10",
+    "category": "Coupe de France · 6e tour",
+    "location": "Stade Marcel Ouillon, Saint-Maurice-de-Lignon",
+    "date": "2026-10-24",
+    "clubA": "US Sucs et Lignon",
+    "clubB": "Hauts Lyonnais",
+    "score": {
+      "a": 0,
+      "b": 3
+    },
+    "deliveredCount": 74,
+    "story": "Au stade Marcel Ouillon, l’US Sucs et Lignon (R1) accueille Hauts Lyonnais (N1) pour le 6e tour de la Coupe de France. Hauts Lyonnais s’impose 0-3 à Saint-Maurice-de-Lignon.",
+    "cover": {
+      "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/01-cover-action.webp",
+      "alt": "Un gardien plonge vers le ballon devant des joueurs en blanc et rouge lors du match US Sucs et Lignon - Hauts Lyonnais.",
+      "tags": [
+        "coupe-de-france",
+        "action"
+      ],
+      "inBook": true
+    },
+    "photos": [
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/001.webp",
+        "alt": "Photo 1 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/002.webp",
+        "alt": "Photo 2 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/003.webp",
+        "alt": "Photo 3 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/004.webp",
+        "alt": "Photo 4 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/005.webp",
+        "alt": "Photo 5 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/006.webp",
+        "alt": "Photo 6 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/007.webp",
+        "alt": "Photo 7 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/008.webp",
+        "alt": "Photo 8 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/009.webp",
+        "alt": "Photo 9 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/010.webp",
+        "alt": "Photo 10 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/011.webp",
+        "alt": "Photo 11 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/012.webp",
+        "alt": "Photo 12 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/013.webp",
+        "alt": "Photo 13 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/014.webp",
+        "alt": "Photo 14 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/015.webp",
+        "alt": "Photo 15 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/016.webp",
+        "alt": "Photo 16 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/017.webp",
+        "alt": "Photo 17 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/018.webp",
+        "alt": "Photo 18 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/019.webp",
+        "alt": "Photo 19 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/020.webp",
+        "alt": "Photo 20 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/021.webp",
+        "alt": "Photo 21 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/022.webp",
+        "alt": "Photo 22 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/023.webp",
+        "alt": "Photo 23 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/024.webp",
+        "alt": "Photo 24 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/025.webp",
+        "alt": "Photo 25 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/026.webp",
+        "alt": "Photo 26 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/027.webp",
+        "alt": "Photo 27 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/028.webp",
+        "alt": "Photo 28 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/029.webp",
+        "alt": "Photo 29 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/030.webp",
+        "alt": "Photo 30 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/031.webp",
+        "alt": "Photo 31 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/032.webp",
+        "alt": "Photo 32 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/033.webp",
+        "alt": "Photo 33 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/034.webp",
+        "alt": "Photo 34 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/035.webp",
+        "alt": "Photo 35 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/036.webp",
+        "alt": "Photo 36 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/037.webp",
+        "alt": "Photo 37 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/038.webp",
+        "alt": "Photo 38 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/039.webp",
+        "alt": "Photo 39 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/040.webp",
+        "alt": "Photo 40 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/041.webp",
+        "alt": "Photo 41 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/042.webp",
+        "alt": "Photo 42 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/043.webp",
+        "alt": "Photo 43 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/044.webp",
+        "alt": "Photo 44 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/045.webp",
+        "alt": "Photo 45 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/046.webp",
+        "alt": "Photo 46 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/047.webp",
+        "alt": "Photo 47 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/048.webp",
+        "alt": "Photo 48 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/049.webp",
+        "alt": "Photo 49 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/050.webp",
+        "alt": "Photo 50 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/051.webp",
+        "alt": "Photo 51 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/052.webp",
+        "alt": "Photo 52 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/053.webp",
+        "alt": "Photo 53 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/054.webp",
+        "alt": "Photo 54 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/055.webp",
+        "alt": "Photo 55 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/056.webp",
+        "alt": "Photo 56 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/057.webp",
+        "alt": "Photo 57 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/058.webp",
+        "alt": "Photo 58 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/059.webp",
+        "alt": "Photo 59 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/060.webp",
+        "alt": "Photo 60 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/061.webp",
+        "alt": "Photo 61 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/062.webp",
+        "alt": "Photo 62 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/063.webp",
+        "alt": "Photo 63 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/064.webp",
+        "alt": "Photo 64 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/065.webp",
+        "alt": "Photo 65 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/066.webp",
+        "alt": "Photo 66 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/067.webp",
+        "alt": "Photo 67 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/068.webp",
+        "alt": "Photo 68 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/069.webp",
+        "alt": "Photo 69 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/070.webp",
+        "alt": "Photo 70 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/071.webp",
+        "alt": "Photo 71 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/072.webp",
+        "alt": "Photo 72 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/073.webp",
+        "alt": "Photo 73 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      },
+      {
+        "src": "images/reportages/coupe-de-france-6e-tour-us-sucs-et-lignon-hauts-lyonnais-2026-10/full/074.webp",
+        "alt": "Photo 74 sur 74 du match US Sucs et Lignon 0-3 Hauts Lyonnais (Coupe de France · 6e tour), au Stade Marcel Ouillon, Saint-Maurice-de-Lignon, le 24/10/2026.",
+        "tags": [
+          "coupe-de-france",
+          "action"
+        ],
+        "inBook": true
+      }
+    ]
+  },
+  {
     "slug": "senior-d1-ascm-villars-2026-10",
     "category": "Sénior D1",
     "location": "Stade Municipal, Chambéon",
