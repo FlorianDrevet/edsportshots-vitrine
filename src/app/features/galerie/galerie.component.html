@@ -34,7 +34,7 @@
 
 <section class="mx-auto grid max-w-[1440px] grid-cols-2 gap-3 px-5 pb-10 md:grid-cols-4 md:px-14">
   @for (photo of filteredPhotos(); track photo.src; let i = $index) {
-    <a [routerLink]="['/reportages', photo.reportageSlug]" class="relative block aspect-[3/4] overflow-hidden bg-surface">
+    <a [routerLink]="['/reportages', photo.reportageSlug]" class="ed-tile ed-tile-in relative block aspect-[3/4] overflow-hidden bg-surface" [style.--i]="i % 12">
       <img [src]="photo.src" [alt]="photo.alt" loading="lazy" decoding="async" class="h-full w-full object-cover" />
       <span class="absolute left-3.5 top-2.5 font-display text-2xl text-accent">{{ pad(i + 1) }}</span>
       <span

@@ -12,7 +12,7 @@
   </p>
 </section>
 
-<section class="mx-auto grid max-w-[1440px] grid-cols-1 gap-3.5 px-5 py-10 sm:grid-cols-3 md:px-14">
+<section class="ed-reveal mx-auto grid max-w-[1440px] grid-cols-1 gap-3.5 px-5 py-10 sm:grid-cols-3 md:px-14">
   @for (formule of content.site.formules; track formule.title) {
     <div
       class="flex flex-col gap-4 px-7 py-7"
@@ -37,7 +37,7 @@
   }
 </section>
 
-<section class="mx-auto flex max-w-[1440px] flex-col gap-7 px-5 py-12 md:px-14">
+<section class="ed-reveal mx-auto flex max-w-[1440px] flex-col gap-7 px-5 py-12 md:px-14">
   <h2 class="font-display text-4xl uppercase leading-none tracking-tight md:text-6xl">Comment ça marche</h2>
   <ol class="grid grid-cols-1 gap-3.5 sm:grid-cols-2 lg:grid-cols-4">
     @for (step of steps; track step.title; let i = $index) {
@@ -68,7 +68,7 @@
   </div>
 </section>
 
-<section id="contact" class="mx-auto max-w-[1440px] px-5 py-16 md:px-14">
+<section id="contact" class="ed-reveal ed-drift mx-auto max-w-[1440px] px-5 py-16 md:px-14">
   <div class="flex flex-col gap-8 bg-accent px-6 py-9 text-accent-ink md:flex-row md:items-center md:gap-14 md:px-11">
     <div class="flex w-full flex-col gap-3 md:w-[420px] md:shrink-0">
       <h2 class="font-display text-4xl uppercase leading-[0.9] tracking-tight md:text-5xl">Un match&nbsp;? Écris-moi.</h2>

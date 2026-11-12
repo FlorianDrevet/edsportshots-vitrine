@@ -9,7 +9,7 @@
   </p>
 </section>
 
-<section class="mx-auto flex max-w-[1440px] flex-col gap-4 px-5 py-10 md:px-14">
+<section class="ed-reveal mx-auto flex max-w-[1440px] flex-col gap-4 px-5 py-10 md:px-14">
   @for (reportage of content.reportages; track reportage.slug) {
     <a [routerLink]="['/reportages', reportage.slug]" class="flex flex-col bg-surface sm:flex-row">
       <img

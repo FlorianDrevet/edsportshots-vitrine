@@ -26,3 +26,89 @@
 
 @tailwind components;
 @tailwind utilities;
+
+/* ---- Animations du site (portées depuis les maquettes) ---- */
+@keyframes edFadeUp {
+  0% { opacity: 0; transform: translateY(18px); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes edTileIn {
+  0% { opacity: 0; transform: translateY(26px) scale(0.97); }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes edKen {
+  0% { transform: scale(1.14); }
+  100% { transform: scale(1); }
+}
+@keyframes edSlideIn {
+  0% { opacity: 0; transform: translateX(44px); }
+  100% { opacity: 1; transform: none; }
+}
+
+/* Sections qui apparaissent au défilement */
+@supports (animation-timeline: view()) {
+  .ed-reveal {
+    animation: edFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 5% entry 65%;
+  }
+}
+
+/* Vignettes de la galerie : entrée en cascade */
+.ed-tile-in {
+  animation: edTileIn 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 45ms);
+}
+
+/* Zoom doux sur les vignettes et les couvertures de reportage */
+.ed-tile img {
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.ed-tile:hover img {
+  transform: scale(1.05);
+}
+.ed-ken {
+  animation: edKen 1.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+/* Boutons : léger soulèvement au survol */
+.ed-btn {
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s;
+}
+.ed-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Menu mobile : liens qui glissent un par un */
+nav[aria-label='Navigation principale'] > a {
+  animation: edSlideIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+nav[aria-label='Navigation principale'] > a:nth-child(2) { animation-delay: 0.06s; }
+nav[aria-label='Navigation principale'] > a:nth-child(3) { animation-delay: 0.12s; }
+nav[aria-label='Navigation principale'] > a:nth-child(4) { animation-delay: 0.18s; }
+nav[aria-label='Navigation principale'] > a:nth-child(5) { animation-delay: 0.24s; }
+nav[aria-label='Navigation principale'] > a:nth-child(6) { animation-delay: 0.3s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ed-reveal,
+  .ed-tile-in,
+  .ed-ken,
+  nav[aria-label='Navigation principale'] > a {
+    animation: none;
+  }
+}
+
+/* Fond de la section contact : quadrillage de points qui dérive */
+.ed-drift {
+  background-image: radial-gradient(rgba(216, 255, 62, 0.14) 1.5px, transparent 1.5px);
+  background-size: 36px 36px;
+  animation: edDrift 18s linear infinite;
+}
+@keyframes edDrift {
+  0% { background-position: 0 0; }
+  100% { background-position: -180px 180px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ed-drift { animation: none; }
+}

@@ -1,0 +1,216 @@
+// Rafale : tirages opaques qui glissent (sans fondu, donc sans flou), photo fixe, sticker BUT.
+$ease-out: cubic-bezier(0.25, 0.8, 0.3, 1);
+
+.burst-stage {
+  --sc: 1;
+  display: grid;
+  place-items: center;
+}
+
+.burst-frame {
+  grid-area: 1 / 1;
+  width: 78%;
+  aspect-ratio: 3 / 2;
+  margin: 0;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+  transform: translate(calc(var(--ox) * 8px * var(--sc)), calc(var(--oy) * 6px * var(--sc))) rotate(var(--r));
+  animation: burstIn 0.16s $ease-out var(--d) both;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.burst-still {
+  animation: stillIn 0.6s $ease-out var(--d) both;
+}
+
+.burst-but {
+  position: absolute;
+  left: 8%;
+  top: 12%;
+  background: #d8ff3e;
+  color: #0e0f10;
+  padding: 10px 22px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  transform: rotate(-8deg);
+  animation: butIn 0.22s $ease-out var(--d) both;
+}
+
+.burst-prog {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: #d8ff3e;
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: progGrow var(--len) linear var(--d) both;
+}
+
+.ed-marquee {
+  animation: edMarquee 22s linear infinite;
+  will-change: transform;
+}
+
+.ed-line {
+  display: block;
+  overflow: hidden;
+
+  > span {
+    display: block;
+    transform: translateY(105%);
+    animation: edRise 0.7s $ease-out calc(var(--i) * 0.12s + 0.1s) both;
+  }
+}
+
+.ed-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0e0f10;
+  animation: edIntroOut 0.4s ease 1.2s both;
+}
+
+.ed-dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d8ff3e;
+  animation: edDot 1.2s $ease-out calc(var(--i) * 70ms) both;
+}
+
+.ed-dots {
+  display: flex;
+  gap: 10px;
+}
+
+.ed-btn {
+  transition: transform 0.25s $ease-out, box-shadow 0.25s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media (max-width: 767px) {
+  .burst-stage {
+    --sc: 0.615;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .burst-frame {
+    animation: none;
+    visibility: hidden;
+  }
+  .burst-still,
+  .burst-but,
+  .burst-prog,
+  .ed-intro,
+  .ed-marquee,
+  .ed-line > span {
+    animation: none;
+    transform: none;
+  }
+  .ed-intro {
+    display: none;
+  }
+}
+
+@keyframes burstIn {
+  0% {
+    transform: translate(calc(var(--ox) * 8px * var(--sc) + 90px * var(--sc)), calc(var(--oy) * 6px * var(--sc))) rotate(var(--r));
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(calc(var(--ox) * 8px * var(--sc)), calc(var(--oy) * 6px * var(--sc))) rotate(var(--r));
+    visibility: visible;
+  }
+}
+
+@keyframes stillIn {
+  0% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+@keyframes butIn {
+  0% {
+    transform: scale(0.85) rotate(-8deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(-8deg);
+    opacity: 1;
+  }
+}
+
+@keyframes progGrow {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes edMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes edRise {
+  0% {
+    transform: translateY(105%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes edDot {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(2.4);
+    opacity: 1;
+  }
+  65% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.32;
+  }
+}
+
+@keyframes edIntroOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
