@@ -1,77 +1,121 @@
-@if (intro()) {
-  <div class="ed-intro" aria-hidden="true">
-    <div class="ed-dots">
-      @for (d of dots; track d) {
-        <span class="ed-dot" [style.--i]="d"></span>
-      }
+@if (intro(); as s) {
+  <!-- Coup d'envoi : terrain en pointillés, ligne médiane et rond central tracés, puis le rideau remonte -->
+  <div class="ed-intro" [class.ed-intro--mobile]="s.mobile" aria-hidden="true">
+    @for (d of s.dots; track $index) {
+      <span class="ed-intro-dot" [style.left.px]="d.x" [style.top.px]="d.y" [style.animation-delay]="d.delay"></span>
+    }
+    <svg class="ed-intro-pitch" [attr.width]="s.w" [attr.height]="s.h" [attr.viewBox]="'0 0 ' + s.w + ' ' + s.h" fill="none">
+      <line [attr.x1]="s.cx" [attr.y1]="s.cy" [attr.x2]="s.cx" y2="0" stroke-width="2"
+        [attr.stroke-dasharray]="s.cy" [attr.stroke-dashoffset]="s.cy" class="ed-draw-line" />
+      <line [attr.x1]="s.cx" [attr.y1]="s.cy" [attr.x2]="s.cx" [attr.y2]="s.h" stroke-width="2"
+        [attr.stroke-dasharray]="s.h - s.cy" [attr.stroke-dashoffset]="s.h - s.cy" class="ed-draw-line" />
+      <circle [attr.cx]="s.cx" [attr.cy]="s.cy" [attr.r]="s.r" stroke-width="2"
+        [attr.stroke-dasharray]="s.circ" [attr.stroke-dashoffset]="s.circ"
+        [attr.transform]="'rotate(-90 ' + s.cx + ' ' + s.cy + ')'" class="ed-draw-circle" />
+    </svg>
+    <span class="ed-intro-spot" [style.left.px]="s.cx - 7" [style.top.px]="s.cy - 7"></span>
+    <div class="ed-intro-brand" [style.top.px]="s.cy + (s.mobile ? 126 : 184)">
+      <div class="flex items-center gap-2.5">
+        <span class="ed-intro-mark">ED</span>
+        <span class="ed-intro-name">SPORTSHOTS</span>
+      </div>
+      <span class="ed-intro-kick">Coup d'envoi</span>
     </div>
+    <span class="ed-intro-bar"></span>
   </div>
 }
 
-<section class="mx-auto flex max-w-[1440px] flex-col gap-10 px-5 py-12 md:flex-row md:items-stretch md:gap-0 md:px-14 md:py-0">
-  <div class="flex flex-col justify-between gap-8 md:w-[52%] md:py-16 md:pr-12">
-    <div class="flex flex-col gap-6">
-      <div class="flex items-center gap-3">
-        <span class="inline-block h-1 w-11 bg-accent"></span>
-        <span class="text-xs font-bold uppercase tracking-[0.24em] text-accent">{{ content.site.tagline }}</span>
+<section
+  class="hero mx-auto flex max-w-[1440px] flex-col gap-4 px-5 pb-0 pt-7 md:flex-row md:items-stretch md:gap-0 md:py-0 md:pl-14 md:pr-0"
+  [style.--t]="textShift"
+>
+  <div class="contents md:flex md:w-[52.8%] md:shrink-0 md:flex-col md:justify-between md:gap-8 md:py-16 md:pr-12">
+    <div class="order-1 flex flex-col gap-4 md:order-none md:gap-6">
+      <div class="ed-in flex items-center gap-2.5 md:gap-3" style="--at: 0.25s">
+        <span class="inline-block h-1 w-8 bg-accent md:w-11"></span>
+        <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-accent md:text-[13px] md:tracking-[0.24em]">{{
+          content.site.tagline
+        }}</span>
       </div>
-      <h1 class="font-display text-5xl leading-[0.86] tracking-tight uppercase text-text sm:text-6xl md:text-7xl lg:text-8xl">
-        <span class="ed-line"><span [style.--i]="0">Chaque</span></span>
-        <span class="ed-line"><span [style.--i]="1">match</span></span>
-        <span class="ed-line"><span class="text-accent" [style.--i]="2">a son</span></span>
-        <span class="ed-line"><span [style.--i]="3">image.</span></span>
+      <h1 class="font-display text-[54px] uppercase leading-[0.86] tracking-[-0.035em] text-text sm:text-7xl lg:text-8xl xl:text-[108px]">
+        <span class="ed-line"><span style="--at: 0.3s">Chaque</span></span>
+        <span class="ed-line"><span style="--at: 0.38s">match</span></span>
+        <span class="ed-line"><span class="text-accent" style="--at: 0.46s">a son</span></span>
+        <span class="ed-line"><span style="--at: 0.54s">image.</span></span>
       </h1>
-      <p class="max-w-[540px] text-lg leading-relaxed text-text-muted">
+      <p class="ed-in max-w-[540px] text-base leading-normal text-text-muted md:text-lg md:leading-relaxed" style="--at: 0.65s">
         {{ content.site.photographerFirstName }} D. - les duels, les courses, les visages d'après-match. Tu joues, je
         shoote, ton club récupère des images qui tapent.
       </p>
     </div>
-    <div class="flex flex-wrap items-center gap-3.5">
-      <a routerLink="/galerie" class="ed-btn bg-accent px-8 py-4 text-sm font-bold uppercase tracking-wider text-bg">Voir le book</a>
-      <a routerLink="/prestations" class="ed-btn border-2 border-border-strong px-8 py-4 text-sm font-bold uppercase tracking-wider text-text"
+    <div class="ed-in order-3 flex flex-col gap-2.5 md:order-none md:flex-row md:flex-wrap md:items-center md:gap-3.5" style="--at: 0.75s">
+      <a
+        routerLink="/galerie"
+        class="ed-btn flex h-[54px] items-center justify-center bg-accent px-8 text-sm font-bold uppercase tracking-[0.08em] text-bg md:h-auto md:py-[18px] md:text-[15px]"
+        >Voir le book</a
+      >
+      <a
+        routerLink="/prestations"
+        class="flex h-[50px] items-center justify-center border-2 border-border-strong px-8 text-sm font-bold uppercase tracking-[0.08em] text-text md:h-auto md:py-4 md:text-[15px]"
         >Les formules</a
       >
     </div>
   </div>
 
-  <div class="relative min-h-[280px] flex-1 overflow-hidden bg-surface md:min-h-0">
+  <!-- Rafale : 25 tirages qui s'empilent, « But ! », puis la photo retenue glisse par-dessus -->
+  <div class="burst-panel order-2 md:order-none" [class.is-static]="reduced">
     @for (cycle of cycles(); track cycle) {
-      <div class="burst-stage absolute inset-0">
-        @for (f of frames(); track f.i) {
-          <figure class="burst-frame" [style.--ox]="f.ox" [style.--oy]="f.oy" [style.--r]="f.r" [style.--d]="f.delay">
-            <img [src]="f.src" alt="" />
-          </figure>
-        }
+      <div class="burst" [style.--d]="burstDelay()">
+        <div
+          class="burst-shot"
+          role="img"
+          aria-label="Rafale de 25 photos prises le 11 novembre 2026 : l'action devant le but, le ballon au fond des filets, puis la célébration du numéro 7"
+        >
+          <div class="burst-box">
+            <div class="burst-stack">
+              @for (f of frames; track f.i) {
+                <figure class="burst-frame" [style.--tx]="f.tx" [style.--ty]="f.ty" [style.--r]="f.r" [style.--at]="f.at">
+                  <img [src]="f.src" alt="" decoding="async" />
+                  <figcaption><span>{{ f.name }}</span><span>{{ f.count }}</span></figcaption>
+                </figure>
+              }
+            </div>
+            <span class="burst-but" [style.--at]="goalAt">But&nbsp;!</span>
+          </div>
+          <span class="burst-corner burst-corner--tl"></span>
+          <span class="burst-corner burst-corner--tr"></span>
+          <span class="burst-corner burst-corner--bl"></span>
+          <span class="burst-corner burst-corner--br"></span>
+          <div class="burst-hud burst-hud--tl"><span class="burst-pulse"></span><span>Rafale · 25 img</span></div>
+          <span class="burst-hud burst-hud--tr">11.11.2026</span>
+          <div class="burst-track"><div class="burst-prog" [style.--len]="stillAt"></div></div>
+          <span class="burst-hud burst-hud--bl">1/1250 s · f/5 · ISO 125<span class="hidden md:inline"> · 39 mm</span></span>
+          <span class="burst-hud burst-hud--br">Canon EOS R50</span>
+        </div>
+
+        <div class="burst-still" [style.--at]="stillAt">
+          <img
+            [src]="content.site.heroPhoto.src"
+            [alt]="content.site.heroPhoto.alt"
+            class="absolute inset-0 h-full w-full object-cover"
+            style="object-position: 50% 32%"
+          />
+          <span class="burst-ribbon">&#64;ed_sportshots</span>
+          <span class="burst-caption">U18 D2 - Chamboeuf</span>
+          <button type="button" class="burst-replay ed-btn" (click)="replay()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true">
+              <path d="M20 12a8 8 0 1 1-2.34-5.66" />
+              <polyline points="20 3 20 9 14 9" />
+            </svg>
+            <span class="md:hidden">Rejouer</span><span class="hidden md:inline">Rejouer la rafale</span>
+          </button>
+        </div>
       </div>
-      <img
-        [src]="content.site.heroPhoto.src"
-        [alt]="content.site.heroPhoto.alt"
-        class="burst-still absolute inset-0 h-full w-full object-cover"
-        style="object-position: 50% 32%"
-        [style.--d]="stillDelay()"
-      />
-      <span class="burst-but" [style.--d]="goalDelay()">But&nbsp;!</span>
-      <span class="burst-prog" [style.--d]="cycleBase()" [style.--len]="cycleLength"></span>
-    }
-    <span
-      class="absolute right-[-40px] top-8 rotate-[-4deg] bg-accent px-14 py-3 font-display text-sm uppercase tracking-wide text-bg"
-      >&#64;ed_sportshots</span
-    >
-    <span class="absolute bottom-6 left-6 bg-bg/80 px-3.5 py-2 text-[13px] font-semibold uppercase tracking-wider text-text"
-      >U18 D2 - Chamboeuf</span
-    >
-    @if (burstDone()) {
-      <button
-        type="button"
-        (click)="replay()"
-        class="ed-btn absolute bottom-6 right-6 bg-accent px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-bg"
-      >
-        Rejouer&nbsp;&#8635;
-      </button>
     }
   </div>
 </section>
 
+<div class="h-8 md:hidden"></div>
 <div class="flex h-16 items-center overflow-hidden whitespace-nowrap bg-accent text-bg md:h-[72px]">
   <div class="ed-marquee flex items-center gap-7 px-5 md:px-14">
     @for (repeat of tickerRepeats; track repeat) {
