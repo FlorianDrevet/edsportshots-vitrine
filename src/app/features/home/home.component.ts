@@ -113,6 +113,15 @@ export class HomeComponent implements OnDestroy {
     const playIntro = !this.reduced && !introPlayed && typeof window !== 'undefined';
     introPlayed = true;
     this.textShift = playIntro ? `${INTRO_SHIFT}s` : '0s';
+    if (!this.reduced && typeof Image !== 'undefined') {
+      // Les tirages restent masqués jusqu'à leur entrée : on les décode d'avance
+      // pour qu'aucun n'apparaisse blanc pendant la rafale.
+      for (const f of this.frames) {
+        const img = new Image();
+        img.src = f.src;
+        img.decode?.().catch(() => undefined);
+      }
+    }
     if (playIntro) {
       this.base.set(BASE_WITH_INTRO);
       this.intro.set(buildIntro());

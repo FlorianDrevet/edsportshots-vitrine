@@ -75,7 +75,7 @@
             <div class="burst-stack">
               @for (f of frames; track f.i) {
                 <figure class="burst-frame" [style.--tx]="f.tx" [style.--ty]="f.ty" [style.--r]="f.r" [style.--at]="f.at">
-                  <img [src]="f.src" alt="" decoding="async" />
+                  <img [src]="f.src" alt="" />
                   <figcaption><span>{{ f.name }}</span><span>{{ f.count }}</span></figcaption>
                 </figure>
               }
